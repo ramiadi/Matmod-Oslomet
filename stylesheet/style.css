@@ -7,23 +7,40 @@ body {
   .bar {
     padding-inline: 5rem;
   }
+  .page {
+    margin-block-start: 3rem;
+    margin-inline: 4rem;
+  }
 }
+@media screen and (max-width: 800px) {
+  .page {
+    padding: 1rem;
+  }
+}
+
 .bar {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   background-color: rgb(255, 220, 0);
-  border: 2px solid red;
 }
 
 .bar__image {
   width: 6rem;
-  border: 2px solid blue;
-  display: flex;
 }
+.bar__left {
+  display: flex;
+  flex-direction: column;
+}
+
 .bar__icon {
   border: 2px dashed black;
   display: flex;
+  margin-block-start: 1rem;
+}
+
+.left__studie {
+  padding-block: 1.5rem;
   margin-inline-start: 2rem;
 }
 
@@ -33,5 +50,35 @@ body {
 
 .bar__icon--style {
   font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.page {
+  border: 5px solid black;
+}
+
+.page__image {
+  width: 100%;
+}
+
+.page h3,
+p {
+  line-height: 0.1rem;
+}
+
+.page p {
+  margin-block-end: 2rem;
+  font-size: 1.1rem;
+}
+.page h3 {
+  margin-block-start: 3rem;
+}
+.page hr {
+  border: 1px solid rgb(151, 151, 151);
+}
+
+.left__studie--style {
+  color: black;
+  font-size: 1.2rem;
   font-weight: 700;
 }
