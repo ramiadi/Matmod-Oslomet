@@ -52,7 +52,7 @@ body {
 
 /* Start av hovedsiden */
 .page {
-  border: 5px solid black;
+  border: 1px solid black;
 }
 
 .page__image {
@@ -78,6 +78,24 @@ body {
 }
 
 /* Slutt av hovedsiden */
+
+/* Footer */
+
+.bottom {
+  background-color: rgb(255, 220, 0);
+  border: 2px solid black;
+  padding-inline: 1rem;
+}
+
+.bottom__upper {
+  border-bottom: 1px solid black;
+}
+
+.bottom__table {
+  border: 2px solid red;
+}
+
+/* Slutten av footer */
 
 /* Styling */
 .bar__icon--style {
