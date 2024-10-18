@@ -11,10 +11,16 @@ body {
     margin-block-start: 3rem;
     margin-inline: 4rem;
   }
+  .bottom {
+    padding-inline: 3rem;
+  }
 }
 @media screen and (max-width: 800px) {
   .page {
     padding: 1rem;
+  }
+  .bottom {
+    padding-inline: 1rem;
   }
 }
 
@@ -83,16 +89,44 @@ body {
 
 .bottom {
   background-color: rgb(255, 220, 0);
-  border: 2px solid black;
   padding-inline: 1rem;
 }
 
 .bottom__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   border-bottom: 1px solid black;
 }
+.bottom__upper h2 {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
 
-.bottom__table {
+.bottom__page {
+  display: flex;
+  justify-content: space-around;
+}
+
+.bottom__tableLeft,
+.bottom__tableMiddle,
+.bottom__tableRight {
   border: 2px solid red;
+  text-align: left;
+}
+
+.bottom__tableLeft tr {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+}
+
+.bottom__tableMiddle th,
+.bottom__tableRight th {
+  display: flex;
+  flex-direction: column;
 }
 
 /* Slutten av footer */
