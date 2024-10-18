@@ -1,84 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/style.css">
-</head>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+  </head>
 
-<body>
-
+  <body>
     <header class="bar">
-
-        <div class="bar__left">
-            <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo.png" alt="Oslomet-logo"
-                    class="bar__image"></a>
-            <a href="#" class="left__studie left__studie--style">Studieoversikt</a>
+      <div class="bar__left">
+        <a href="https://www.oslomet.no/"
+          ><img
+            src="image/Oslomet-logo.png"
+            alt="Oslomet-logo"
+            class="bar__image"
+        /></a>
+        <a href="#" class="left__studie left__studie--style">Studieoversikt</a>
+      </div>
+      <div class="bar__icon bar__icon--style">
+        <div class="icon__search">
+          <a href="#" style="text-decoration: none">Søk 🔍</a>
         </div>
-        <div class="bar__icon bar__icon--style">
-            <div class="icon__search">
-                <a href="#" style="text-decoration: none;">Søk 🔍</a>
-            </div>
-            <div class="icon__meny">
-                <a href="#" style="text-decoration: none;">Meny ☰</a>
-            </div>
-
+        <div class="icon__meny">
+          <a href="#" style="text-decoration: none">Meny ☰</a>
         </div>
-
+      </div>
     </header>
 
     <!--Dette er kopiert kode fra Faysbashir (branch: adding-some-images-and-text) 
     fordi vi hadde problemer med å merge -->
     <div class="page">
-        <img src="image/Anvendt-datateknologi_bachelor.jpg" alt="Bilde av studiet" class="page__image">
-        <h1 class="page__heading page__heading--style">Matematisk modellering og datavitenskap –
-            ingeniør</h1>
-        <h2 style="font-weight: 500;">Bachelorprogram</h2>
-        <hr />
+      <img
+        src="image/Anvendt-datateknologi_bachelor.jpg"
+        alt="Bilde av studiet"
+        class="page__image"
+      />
+      <h1 class="page__heading page__heading--style">
+        Matematisk modellering og datavitenskap – ingeniør
+      </h1>
+      <h2 style="font-weight: 500">Bachelorprogram</h2>
+      <hr />
 
-        <!-- Table er tatt fra w3schools link:https://www.w3schools.com/html/html_tables.asp -->
-        <table class="page__table">
-            <tr>
-                <th>Studiested</th>
-                <td>Pilestredet i Oslo</td>
-            </tr>
+      <!-- Table er tatt fra w3schools link:https://www.w3schools.com/html/html_tables.asp -->
+      <table class="page__table">
+        <tr>
+          <th>Studiested</th>
+          <td>Pilestredet i Oslo</td>
+        </tr>
 
-            <tr>
-                <th>Varighet</th>
-                <td>3 år</td>
-            </tr>
+        <tr>
+          <th>Varighet</th>
+          <td>3 år</td>
+        </tr>
 
-            <tr>
-                <th>Omfang</th>
-                <td>Heltid</td>
-            </tr>
+        <tr>
+          <th>Omfang</th>
+          <td>Heltid</td>
+        </tr>
 
-            <tr>
-                <th>Studiepoeng</th>
-                <td>180</td>
-            </tr>
+        <tr>
+          <th>Studiepoeng</th>
+          <td>180</td>
+        </tr>
 
-            <tr>
-                <th>Studiestart</th>
-                <td>August</td>
-            </tr>
+        <tr>
+          <th>Studiestart</th>
+          <td>August</td>
+        </tr>
 
-            <tr>
-                <th>Undervisningsspråk</th>
-                <td>Norsk</td>
-                <td>Engelsk</td>
-            </tr>
+        <tr>
+          <th>Undervisningsspråk</th>
+          <td>Norsk</td>
+          <td>Engelsk</td>
+        </tr>
 
-            <tr>
-                <th>Studieplasser</th>
-                <td>40</td>
-            </tr>
-        </table>
-
+        <tr>
+          <th>Studieplasser</th>
+          <td>40</td>
+        </tr>
+      </table>
     </div>
 
-</body>
+    <!--starter her -->
+    <!DOCTYPE html>
+    <html lang="no">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Studieprogrammer</title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Lys bakgrunn */
+            margin: 0;
+            padding: 20px;
+          }
+          h1 {
+            text-align: center;
+            color: #333; /* Mørk tekstfarge */
+          }
+          .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Sentrerer innholdet */
+            gap: 20px; /* Avstand mellom kortene */
+          }
+          .program-card {
+            background-color: #fff; /* Hvit bakgrunn for hvert kort */
+            border: 1px solid #ddd; /* Lys grense */
+            border-radius: 8px; /* Rundede hjørner */
+            padding: 15px; /* Indre avstand */
+            width: 200px; /* Bredde på kortene */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Lett skygge */
+            transition: transform 0.3s; /* Overgangseffekt */
+          }
+          .program-card:hover {
+            transform: translateY(-5px); /* Hever kortet ved hover */
+          }
+          a {
+            text-decoration: none; /* Fjerner understrek */
+            color: #007bff; /* Blå farge for lenker */
+            font-weight: bold; /* Fet skrift */
+          }
+          a:hover {
+            text-decoration: underline; /* Understreker ved hover */
+          }
+        </style>
+      </head>
+      <body>
+        <h1>Du er kanskje også interessert i disse?</h1>
 
+        <div class="container">
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi"
+              >Anvendt datateknologi</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a
+              href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior"
+              >Bioteknologi- og kjemiingeniør</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/byggingenior"
+              >Byggingeniør</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/dataingenior"
+              >Dataingeniør</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior"
+              >Elektronikkingeniør</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi"
+              >Informasjonsteknologi</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/maskiningenior"
+              >Maskiningeniør</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+          <div class="program-card">
+            <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior"
+              >Tre-terminsordning til ingeniørutdanning</a
+            ><br />
+            Bachelorprogram 3 år Pilestredet i Oslo Heltid
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
 </html>
