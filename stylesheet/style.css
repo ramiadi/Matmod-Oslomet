@@ -22,6 +22,10 @@ body {
   .bottom {
     padding-inline: 1rem;
   }
+  .bottom__page {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 /* Heading */
@@ -107,13 +111,13 @@ body {
 
 .bottom__page {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .bottom__tableLeft,
 .bottom__tableMiddle,
 .bottom__tableRight {
-  border: 2px solid red;
+  max-width: fit-content;
   text-align: left;
 }
 
@@ -127,6 +131,19 @@ body {
 .bottom__tableRight th {
   display: flex;
   flex-direction: column;
+}
+
+/* Icons  */
+.fa {
+  padding: 20px;
+  text-align: center;
+  margin: 5px 2px;
+  font-size: 30px;
+  width: 50px;
+}
+.fa-facebook {
+  background: #3b5998;
+  color: white;
 }
 
 /* Slutten av footer */
