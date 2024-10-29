@@ -57,6 +57,50 @@ body {
   margin-inline-end: 1.5rem;
 }
 
+/* Dropdown knapp  */
+
+.bar__meny {
+  border: 2px solid red;
+}
+
+.bar__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.bar__dropdown-content {
+  display: none;
+  position: absolute;
+  text-align: right;
+  width: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: 0;
+  left: auto;
+}
+
+.bar__dropdown-content a {
+  color: black;
+  padding: 0.2rem 0.5rem;
+  display: block;
+  background-color: aqua;
+  text-align: right;
+  width: auto;
+}
+
+.bar__dropdown-content a:active {
+  background-color: #ddd;
+}
+
+.bar__dropdown-content a:hover {
+  background-color: blue;
+  border: 1px solid gray;
+}
+
+.bar__dropdown:focus-within .bar__dropdown-content,
+.bar__dropdown:active .bar__dropdown-content {
+  display: block;
+}
+
 /* Slutt av heading */
 
 /* Start av hovedsiden */
