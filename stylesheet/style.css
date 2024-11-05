@@ -112,7 +112,6 @@ body {
 
 /* Start av hovedsiden */
 .page {
-  border: 1px solid black;
 }
 
 .page__image,
@@ -133,6 +132,85 @@ body {
   font-size: 1.2rem;
   text-align: left;
   width: 100%;
+}
+
+.page__trekk {
+  margin: 1.2rem auto;
+}
+.page__trekk-item {
+  border-radius: 5px;
+  margin-block-end: 1.5rem;
+  overflow: hidden;
+}
+.page__trekk-item input[type="checkbox"] {
+  display: none;
+}
+
+.page__trekk-header {
+  background-color: #213949;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.page__trekk-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+
+.page__trekk-item input[type="checkbox"]:checked ~ .page__trekk-content {
+  max-height: 200px;
+  padding: 15px;
+}
+
+.page__trekk-header::before {
+  content: "⬇️";
+  font-size: 1.5rem;
+  transform: rotate(0);
+}
+.page__trekk-item input[type="checkbox"]:checked + .page__trekk-header::before {
+  transform: rotate(-180deg);
+}
+
+.page__elementer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.page__grid-item {
+  display: block;
+  text-decoration: none;
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.page__grid-item:hover {
+  transform: translate(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e6f7ff;
+}
+.page__detaljer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.page__detaljer li {
+  margin: 4px 0;
 }
 
 /* Slutt av hovedsiden */
