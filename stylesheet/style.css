@@ -38,23 +38,74 @@ body {
 .bar__image {
   width: 6rem;
 }
-.bar__left {
+.bar__right {
   display: flex;
   flex-direction: column;
 }
 
 .bar__icon {
   display: flex;
-  margin-block-start: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 
-.left__studie {
+.right__studie {
   padding-block: 1.5rem;
-  margin-inline-start: 2rem;
 }
 
 .icon__search {
   margin-inline-end: 1.5rem;
+}
+
+/* Dropdown knapp  */
+
+.bar__meny {
+  border: 2px solid red;
+}
+
+.bar__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.bar__dropdownbtn {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bar__dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: auto;
+  left: 0;
+  min-width: fit-content;
+}
+
+.bar__dropdown-content a {
+  color: black;
+  padding: 0.5rem;
+  display: block;
+  background-color: aqua;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.bar__dropdown-content a:active {
+  background-color: #ddd;
+}
+
+.bar__dropdown-content a:hover {
+  background-color: blue;
+  border: 1px solid gray;
+}
+
+.bar__dropdown:focus-within .bar__dropdown-content,
+.bar__dropdown:active .bar__dropdown-content {
+  display: block;
 }
 
 /* Slutt av heading */
@@ -159,7 +210,7 @@ body {
   font-weight: 700;
 }
 
-.left__studie--style {
+.right__studie--style {
   color: black;
   font-size: 1.2rem;
   font-weight: 700;
