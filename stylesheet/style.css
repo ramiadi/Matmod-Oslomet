@@ -3,6 +3,7 @@ body {
   padding: 0;
 }
 
+/* Legger til media query skjerm bredde for laptop og desktop brukere */
 @media screen and (min-width: 800px) {
   .bar {
     padding-inline: 4rem;
@@ -19,14 +20,14 @@ body {
     flex-direction: row;
   }
 }
+/* Legger til media query skjerm bredde for de med mindre bredde (mobilbrukere) */
 @media screen and (max-width: 800px) {
   .page,
   .bottom {
     padding: 1rem;
   }
 
-  .bottom__page,
-  .page__faglig-leder-boks {
+  .bottom__page {
     display: flex;
     flex-direction: column;
   }
@@ -37,16 +38,22 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .page__boks,
-  .page__faglig-leder-image {
+  .page__boks {
     width: 100%;
   }
-  .page__boks-elementer {
-    display: flex;
-    justify-content: center;
+  .page__faglig-leder-boks {
+    flex-direction: column;
+    align-items: center;
   }
-  .page__faglig-leder-content {
-    padding-block-end: 1rem;
+
+  .page__wrapper th,
+  .page__wrapper td {
+    display: block;
+  }
+
+  .page__wrapper th {
+    font-size: 1rem;
+    margin-block-start: 1rem;
   }
 }
 
@@ -226,26 +233,41 @@ body {
 }
 
 /* Faglig leder */
-.page__boks-elementer {
+
+.page__wrapper {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  padding: 1.2rem;
+  border-radius: 10px;
 }
 
 .page__faglig-leder-boks {
   display: flex;
-  align-items: center;
-  border: 3px solid #0077cc;
-  width: fit-content;
+  text-decoration: none;
+  padding: 1rem;
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  background-color: #eef4fb;
 }
-.page__faglig-leder-image {
-  max-height: 17rem;
+.page__faglig-leder-boks:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e6f7ff;
 }
-.page__faglig-leder-content {
-  padding-inline: 1rem;
+
+.page__wrapper th,
+.page__wrapper td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
 }
-.page__faglig-leder-content tr {
-  display: flex;
-  flex-direction: column;
+.page__wrapper th {
+  text-align: left;
+  color: #0056b3;
+}
+
+.profile-image img {
+  border-radius: 10px;
+  max-width: 15rem;
 }
 
 /* Linker til andre studier */
@@ -261,7 +283,8 @@ body {
   border: 2px solid #0077cc;
   border-radius: 10px;
   padding: 15px;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
+  background-color: #eef4fb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 .page__grid-item:hover {
