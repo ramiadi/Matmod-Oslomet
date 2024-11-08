@@ -5,16 +5,39 @@ body {
 
 @media screen and (min-width: 800px) {
   .bar {
-    padding-inline: 5rem;
+    padding-inline: 4rem;
   }
   .page {
     margin-block-start: 3rem;
     margin-inline: 4rem;
   }
+  .bottom {
+    padding-inline: 4rem;
+  }
+  .page__liste {
+    display: flex;
+    flex-direction: row;
+  }
 }
 @media screen and (max-width: 800px) {
-  .page {
+  .page,
+  .bottom {
     padding: 1rem;
+  }
+
+  .bottom__page {
+    display: flex;
+    flex-direction: column;
+  }
+  .page__elementer,
+  .page__liste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .page__boks {
+    width: 100%;
   }
 }
 
@@ -23,45 +46,93 @@ body {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  background-color: rgb(255, 220, 0);
+  background-color: rgb(252, 221, 4);
 }
 
 .bar__image {
   width: 6rem;
 }
-.bar__left {
+.bar__right {
   display: flex;
   flex-direction: column;
 }
 
 .bar__icon {
   display: flex;
-  margin-block-start: 1rem;
+  align-items: center;
+  gap: 2rem;
 }
 
-.left__studie {
+.right__studie {
   padding-block: 1.5rem;
-  margin-inline-start: 2rem;
 }
 
 .icon__search {
   margin-inline-end: 1.5rem;
 }
 
+/* Dropdown knapp  */
+
+.bar__meny {
+  border: 2px solid red;
+}
+
+.bar__dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.bar__dropdownbtn {
+  padding: 0.5rem 1rem;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.bar__dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  right: auto;
+  left: 0;
+  min-width: fit-content;
+}
+
+.bar__dropdown-content a {
+  color: black;
+  padding: 0.5rem;
+  display: block;
+  background-color: aqua;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.bar__dropdown-content a:active {
+  background-color: #ddd;
+}
+
+.bar__dropdown-content a:hover {
+  background-color: blue;
+  border: 2px solid gray;
+}
+
+.bar__dropdown:focus-within .bar__dropdown-content,
+.bar__dropdown:active .bar__dropdown-content {
+  display: block;
+}
+
 /* Slutt av heading */
 
 /* Start av hovedsiden */
 .page {
-  border: 5px solid black;
 }
 
-.page__image {
-  width: 100%;
-}
-
+.page__image,
 .page__table {
   width: 100%;
 }
+
 .page__table tr {
   display: flex;
   flex-direction: column;
@@ -77,7 +148,173 @@ body {
   width: 100%;
 }
 
+.page__trekk {
+  margin: 1.2rem auto;
+}
+.page__trekk-item {
+  border-radius: 5px;
+  margin-block-end: 1.5rem;
+  overflow: hidden;
+}
+.page__trekk-item input[type="checkbox"] {
+  display: none;
+}
+
+.page__trekk-header {
+  background-color: #213949;
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.page__trekk-content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f9f9f9;
+  padding: 0 1rem;
+}
+
+.page__trekk-item input[type="checkbox"]:checked ~ .page__trekk-content {
+  max-height: fit-content;
+  padding: 15px;
+}
+
+.page__trekk-header::before {
+  content: "⬇️";
+  font-size: 1.5rem;
+  transform: rotate(0);
+}
+.page__trekk-item input[type="checkbox"]:checked + .page__trekk-header::before {
+  transform: rotate(-180deg);
+}
+
+.page__elementer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+}
+.page__liste {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-block: 1rem;
+  gap: 1rem;
+  list-style-type: none;
+}
+.page__boks {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #0077cc;
+  padding: 0.3rem 1rem;
+  text-align: center;
+}
+
+.page__boks:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e6f7ff;
+}
+
+.page__grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.page__grid-item {
+  display: block;
+  text-decoration: none;
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.page__grid-item:hover {
+  transform: translate(-2px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #e6f7ff;
+}
+.page__detaljer {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+.page__detaljer li {
+  margin: 4px 0;
+}
+
 /* Slutt av hovedsiden */
+
+/* Footer */
+
+.bottom {
+  background-color: rgb(255, 220, 0);
+}
+
+.bottom__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid black;
+}
+.bottom__upper h2 {
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.bottom__page {
+  display: flex;
+  justify-content: space-evenly;
+  margin-block-start: 1rem;
+}
+
+.bottom__tableLeft,
+.bottom__tableMiddle,
+.bottom__tableRight {
+  max-width: fit-content;
+  text-align: left;
+  margin-block-end: 1rem;
+}
+
+.bottom__tableLeft tr {
+  display: flex;
+  flex-direction: column;
+  padding-block: 1rem;
+}
+
+.bottom__tableMiddle th,
+.bottom__tableRight th {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+.bottom__tableRight a {
+  display: flex;
+  align-items: center;
+}
+.bottom__tableRight i {
+  padding-inline-end: 0.5rem;
+}
+.bottom__page a {
+  color: black;
+  text-decoration: none;
+}
+.bottom__page a:hover {
+  text-decoration: underline;
+}
+
+/* Icons  */
+.fa-brands {
+  font-size: 2rem;
+}
+/* Slutten av footer */
 
 /* Styling */
 .bar__icon--style {
@@ -85,8 +322,16 @@ body {
   font-weight: 700;
 }
 
-.left__studie--style {
+.right__studie--style {
   color: black;
   font-size: 1.2rem;
   font-weight: 700;
+}
+.page__boks--style {
+  font-size: 1.2rem;
+}
+
+.bottom__tableMiddle--style,
+.bottom__tableRight--style {
+  line-height: 1.5;
 }
