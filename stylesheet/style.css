@@ -25,7 +25,8 @@ body {
     padding: 1rem;
   }
 
-  .bottom__page {
+  .bottom__page,
+  .page__faglig-leder-boks {
     display: flex;
     flex-direction: column;
   }
@@ -36,8 +37,13 @@ body {
     align-items: center;
     justify-content: center;
   }
-  .page__boks {
+  .page__boks,
+  .page__faglig-leder-image {
     width: 100%;
+  }
+  .page__boks-elementer {
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -216,6 +222,31 @@ body {
   background-color: #e6f7ff;
 }
 
+/* Faglig leder */
+.page__boks-elementer {
+  display: flex;
+  align-items: center;
+}
+
+.page__faglig-leder-boks {
+  display: flex;
+  align-items: center;
+
+  border: 3px solid #0077cc;
+  width: fit-content;
+}
+.page__faglig-leder-image {
+  max-height: 17rem;
+}
+.page__faglig-leder-content {
+  padding-inline: 1rem;
+}
+.page__faglig-leder-content tr {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Linker til andre studier */
 .page__grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
