@@ -45,6 +45,9 @@ body {
     display: flex;
     justify-content: center;
   }
+  .page__faglig-leder-content {
+    padding-block-end: 1rem;
+  }
 }
 
 /* Heading */
@@ -231,7 +234,6 @@ body {
 .page__faglig-leder-boks {
   display: flex;
   align-items: center;
-
   border: 3px solid #0077cc;
   width: fit-content;
 }
