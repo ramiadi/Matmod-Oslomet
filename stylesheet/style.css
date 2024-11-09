@@ -7,16 +7,16 @@ body {
 
 /* Legger til media query skjerm bredde for laptop og desktop brukere */
 @media screen and (min-width: 800px) {
-  .bar {
+  .bar,
+  .footer {
     padding-inline: 4rem;
   }
+
   .page {
     margin-block-start: 3rem;
     margin-inline: 4rem;
   }
-  .footer {
-    padding-inline: 4rem;
-  }
+
   .page__liste {
     display: flex;
     flex-direction: row;
@@ -31,7 +31,6 @@ body {
   .footer {
     padding: 1rem;
   }
-
   .footer__page {
     display: flex;
     flex-direction: column;
@@ -111,34 +110,30 @@ body {
 .bar__dropdown-content {
   display: none;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  right: auto;
-  left: 0;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid grey;
+  background-color: #f4f4f4;
+  margin-block-start: 0.5rem;
 }
 .bar__dropdownbtn:hover,
 .bar__dropdownbtn:active,
 .bar__link:hover,
 .bar__link:active {
-  background-color: #444;
+  border-bottom: 2px solid white;
   transform: scale(1.05);
 }
 
 .bar__dropdown-content a {
   color: black;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   display: block;
-  background-color: white;
-  text-align: left;
   white-space: nowrap;
-}
-
-.bar__dropdown-content a:active {
-  background-color: #ddd;
+  text-decoration: none;
 }
 
 .bar__dropdown-content a:hover {
   background-color: #0056b3;
-  border: 2px solid gray;
+  color: white;
 }
 
 .bar__dropdown:focus-within .bar__dropdown-content,
