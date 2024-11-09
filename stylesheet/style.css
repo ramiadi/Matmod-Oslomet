@@ -1,3 +1,5 @@
+/* https://x.com/NOVAnytt/photo */
+
 body {
   margin: 0;
   padding: 0;
@@ -65,7 +67,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(252, 221, 4);
+  background-color: #0077cc;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
 .bar__image {
@@ -77,6 +80,13 @@ body {
   align-items: center;
   gap: 2rem;
   padding: 0.5rem;
+}
+
+.bar__link {
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease;
+  text-decoration: none;
 }
 
 /* Dropdown knapp  */
@@ -91,7 +101,7 @@ body {
 
 .bar__dropdownbtn {
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: transparent;
   color: white;
   border: none;
   cursor: pointer;
@@ -106,16 +116,18 @@ body {
   left: 0;
 }
 .bar__dropdownbtn:hover,
-.bar__dropdownbtn:active {
+.bar__dropdownbtn:active,
+.bar__link:hover,
+.bar__link:active {
   background-color: #444;
   transform: scale(1.05);
 }
 
 .bar__dropdown-content a {
   color: black;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   display: block;
-  background-color: rgb(252, 221, 4);
+  background-color: white;
   text-align: left;
   white-space: nowrap;
 }
@@ -307,6 +319,7 @@ body {
 
 .footer {
   background-color: rgb(255, 220, 0);
+  background-image: linear-gradient(to right, #4b9cd3, #003366);
 }
 
 .footer__upper {
@@ -326,6 +339,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin-block-start: 1rem;
+  gap: 1rem;
 }
 
 .footer__tableLeft,
@@ -333,7 +347,6 @@ body {
 .footer__tableRight {
   max-width: fit-content;
   text-align: left;
-  margin-block-end: 1rem;
 }
 
 .footer__tableLeft tr {
@@ -371,12 +384,11 @@ body {
 /* Slutten av footer */
 
 /* Styling */
-.bar__icon--style {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
 
-.page__boks--style {
+.page__boks--style,
+.bar__dropdownbtn--style,
+.bar__link--style,
+.bar__search--style {
   font-size: 1.2rem;
 }
 
