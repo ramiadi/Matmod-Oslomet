@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Matematisk modellering og datavitenskap</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <!-- denne lenken er fra fontawesome (sosiale medier ikoner) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,12 +16,15 @@
 
     <header class="bar">
 
-
         <div class="bar__icon bar__icon--style">
+
+            <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo-fjernet-bakgrunn.png" alt="Oslomet-logo"
+                    class="bar__image">
+            </a>
 
             <div class="bar__meny">
                 <div class="bar__dropdown">
-                    <button class="bar__dropdownbtn">Meny ☰</button>
+                    <button class="bar__dropdownbtn bar__dropdownbtn--style">Meny ☰</button>
                     <div class="bar__dropdown-content">
                         <a href="https://www.oslomet.no/studier">Studier</a>
                         <a href="https://www.oslomet.no/forskning">Forskningen vår</a>
@@ -32,16 +36,22 @@
                     </div>
                 </div>
             </div>
-            <div class="icon__search">
-                <a href="#" style="text-decoration: none;">Søk 🔍</a>
+            <div class="bar__meny">
+                <div class="bar__dropdown">
+                    <button class="bar__dropdownbtn bar__dropdownbtn--style">Pages ▼</button>
+                    <div class="bar__dropdown-content">
+                        <a href="#">Accesibility</a>
+                        <a href="#">Activity</a>
+                        <a href="#">Github</a>
+                    </div>
+                </div>
             </div>
+            <a href="https://www.oslomet.no/studier/studieoversikt"
+                class="bar__link bar__link--style">Studieoversikt</a>
+        </div>
+        <a href="#" style="text-decoration: none;" class="bar__search bar__search--style">Søk 🔍</a>
 
-        </div>
-        <div class="bar__right">
-            <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo.png" alt="Oslomet-logo"
-                    class="bar__image"></a>
-            <a href="#" class="right__studie right__studie--style">Studieoversikt</a>
-        </div>
+
 
     </header>
 
@@ -95,7 +105,6 @@
         <p>
             Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige
             oppgaver.
-
         </p>
 
         <div class="page__trekk">
@@ -836,17 +845,17 @@
     <!-- Slutt av page -->
 
 
-    <footer class="bottom">
+    <footer class="footer">
 
-        <div class="bottom__upper">
+        <div class="footer__upper">
             <h1>Hold deg oppdatert på hva som skjer på Oslomet</h1>
             <h2><a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a></h2>
 
         </div>
 
-        <div class="bottom__page bottom__page--style">
+        <div class="footer__page footer__page--style">
 
-            <table class="bottom__tableLeft">
+            <table class="footer__tableLeft">
                 <tr>
                     <th>OSLO METROPOLITAN UNIVERSITY</th>
                     <td>STORBYUNIVERSITETET</td>
@@ -860,7 +869,7 @@
                 </tr>
             </table>
 
-            <table class="bottom__tableMiddle bottom__tableMiddle--style">
+            <table class="footer__tableMiddle footer__tableMiddle--style">
                 <tr>
                     <th><a href="https://www.oslomet.no/en">English</a></th>
                     <th><a href="https://www.oslomet.no/alumni">Alumni</a></th>
@@ -879,7 +888,7 @@
                 </tr>
             </table>
 
-            <table class="bottom__tableRight bottom__tableRight--style">
+            <table class="footer__tableRight footer__tableRight--style">
                 <tr>
                     <th><a href="https://www.facebook.com/oslomet/"><i
                                 class="fa-brands fa-square-facebook"></i>Facebook</a>

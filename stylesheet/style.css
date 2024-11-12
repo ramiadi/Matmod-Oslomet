@@ -1,3 +1,5 @@
+/* https://x.com/NOVAnytt/photo */
+
 body {
   margin: 0;
   padding: 0;
@@ -5,16 +7,16 @@ body {
 
 /* Legger til media query skjerm bredde for laptop og desktop brukere */
 @media screen and (min-width: 800px) {
-  .bar {
+  .bar,
+  .footer {
     padding-inline: 4rem;
   }
+
   .page {
     margin-block-start: 3rem;
     margin-inline: 4rem;
   }
-  .bottom {
-    padding-inline: 4rem;
-  }
+
   .page__liste {
     display: flex;
     flex-direction: row;
@@ -22,12 +24,14 @@ body {
 }
 /* Legger til media query skjerm bredde for de med mindre bredde (mobilbrukere) */
 @media screen and (max-width: 800px) {
+  .bar {
+    padding-inline: 1rem;
+  }
   .page,
-  .bottom {
+  .footer {
     padding: 1rem;
   }
-
-  .bottom__page {
+  .footer__page {
     display: flex;
     flex-direction: column;
   }
@@ -60,37 +64,33 @@ body {
 /* Heading */
 .bar {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  background-color: rgb(252, 221, 4);
+  align-items: center;
+  background-color: #0077cc;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
 .bar__image {
   width: 6rem;
-}
-.bar__right {
-  display: flex;
-  flex-direction: column;
 }
 
 .bar__icon {
   display: flex;
   align-items: center;
   gap: 2rem;
+  padding: 0.5rem;
 }
 
-.right__studie {
-  padding-block: 1.5rem;
-}
-
-.icon__search {
-  margin-inline-end: 1.5rem;
+.bar__link {
+  color: white;
+  padding: 0.5rem 1rem;
+  transition: 0.3s ease;
+  text-decoration: none;
 }
 
 /* Dropdown knapp  */
 
 .bar__meny {
-  border: 2px solid red;
 }
 
 .bar__dropdown {
@@ -100,37 +100,40 @@ body {
 
 .bar__dropdownbtn {
   padding: 0.5rem 1rem;
-  background-color: #333;
+  background-color: transparent;
   color: white;
   border: none;
   cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .bar__dropdown-content {
   display: none;
   position: absolute;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  right: auto;
-  left: 0;
-  min-width: fit-content;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid grey;
+  background-color: #f4f4f4;
+  margin-block-start: 0.5rem;
+}
+.bar__dropdownbtn:hover,
+.bar__dropdownbtn:active,
+.bar__link:hover,
+.bar__link:active {
+  border-bottom: 2px solid white;
+  transform: scale(1.05);
 }
 
 .bar__dropdown-content a {
   color: black;
-  padding: 0.5rem;
+  padding: 0.75rem 1rem;
   display: block;
-  background-color: aqua;
-  text-align: left;
   white-space: nowrap;
-}
-
-.bar__dropdown-content a:active {
-  background-color: #ddd;
+  text-decoration: none;
 }
 
 .bar__dropdown-content a:hover {
-  background-color: blue;
-  border: 2px solid gray;
+  background-color: #0056b3;
+  color: white;
 }
 
 .bar__dropdown:focus-within .bar__dropdown-content,
@@ -309,62 +312,63 @@ body {
 
 /* Footer */
 
-.bottom {
+.footer {
   background-color: rgb(255, 220, 0);
+  background-image: linear-gradient(to right, #4b9cd3, #003366);
 }
 
-.bottom__upper {
+.footer__upper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   border-bottom: 1px solid black;
 }
-.bottom__upper h2 {
+.footer__upper h2 {
   background-color: black;
   color: white;
   padding: 1rem;
 }
 
-.bottom__page {
+.footer__page {
   display: flex;
   justify-content: space-evenly;
   margin-block-start: 1rem;
+  gap: 1rem;
 }
 
-.bottom__tableLeft,
-.bottom__tableMiddle,
-.bottom__tableRight {
+.footer__tableLeft,
+.footer__tableMiddle,
+.footer__tableRight {
   max-width: fit-content;
   text-align: left;
-  margin-block-end: 1rem;
 }
 
-.bottom__tableLeft tr {
+.footer__tableLeft tr {
   display: flex;
   flex-direction: column;
   padding-block: 1rem;
 }
 
-.bottom__tableMiddle th,
-.bottom__tableRight th {
+.footer__tableMiddle th,
+.footer__tableRight th {
   display: flex;
   flex-direction: column;
   max-width: fit-content;
 }
 
-.bottom__tableRight a {
+.footer__tableRight a {
   display: flex;
   align-items: center;
 }
-.bottom__tableRight i {
+.footer__tableRight i {
   padding-inline-end: 0.5rem;
 }
-.bottom__page a {
+.footer__page a {
   color: black;
   text-decoration: none;
 }
-.bottom__page a:hover {
+.footer__page a:hover {
   text-decoration: underline;
 }
 
@@ -375,21 +379,15 @@ body {
 /* Slutten av footer */
 
 /* Styling */
-.bar__icon--style {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
 
-.right__studie--style {
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-.page__boks--style {
+.page__boks--style,
+.bar__dropdownbtn--style,
+.bar__link--style,
+.bar__search--style {
   font-size: 1.2rem;
 }
 
-.bottom__tableMiddle--style,
-.bottom__tableRight--style {
+.footer__tableMiddle--style,
+.footer__tableRight--style {
   line-height: 1.5;
 }
