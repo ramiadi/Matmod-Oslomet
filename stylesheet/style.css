@@ -68,8 +68,9 @@ body {
     display: flex;
     flex-direction: column-reverse;
   }
-  .page__studenthistorie-image {
-    max-width: 100%;
+  .page__studenthistorie-image,
+  .page__studenthistorie-content {
+    min-width: 100%;
   }
 }
 
@@ -326,16 +327,30 @@ body {
 
 .page__studenthistorie {
   display: flex;
-  align-items: center;
-  background-image: linear-gradient(to right, #4b9cd3, #003366);
+  align-items: stretch;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  gap: 1rem;
 }
 .page__studenthistorie-content {
-  margin: 1rem;
+  width: 50%;
 }
 
 .page__studenthistorie-image {
-  width: 40rem;
-  height: auto;
+  width: 50%;
+}
+
+.page__studenthistorie-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.page__studenthistorie-boks {
+  display: flex;
+  flex-shrink: 1;
+  gap: 2rem;
+  border: 3px solid red;
+  max-width: fit-content;
 }
 
 /* Slutt av hovedsiden */
@@ -344,7 +359,7 @@ body {
 
 .footer {
   background-color: rgb(255, 220, 0);
-  background-image: linear-gradient(to right, #4b9cd3, #003366);
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
 .footer__upper {
