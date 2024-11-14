@@ -331,10 +331,7 @@ body {
   background-image: linear-gradient(to right, #4b9cd3, #0077cc);
   gap: 1rem;
 }
-.page__studenthistorie-content {
-  width: 50%;
-}
-
+.page__studenthistorie-content,
 .page__studenthistorie-image {
   width: 50%;
 }
