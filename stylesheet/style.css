@@ -45,6 +45,7 @@ body {
   .page__boks {
     width: 100%;
   }
+
   .page__faglig-leder-boks {
     flex-direction: column;
     align-items: center;
@@ -58,6 +59,18 @@ body {
   .page__wrapper th {
     font-size: 1rem;
     margin-block-start: 1rem;
+  }
+  .page__grid-container {
+    grid-template-columns: 1fr !important;
+    max-width: 100%;
+  }
+  .page__studenthistorie {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .page__studenthistorie-image,
+  .page__studenthistorie-content {
+    min-width: 100%;
   }
 }
 
@@ -278,16 +291,18 @@ body {
   display: grid;
   /* https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe */
   /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, minmax(150px, 300px)); /*Lager 2 kolonner */
+  justify-content: center;
   gap: 1rem;
   padding: 1rem;
 }
 .page__grid-item {
   display: block;
   text-decoration: none;
+  text-align: center;
   border: 2px solid #0077cc;
   border-radius: 10px;
-  padding: 15px;
+  padding: 1rem;
   /* background-color: #f9f9f9; */
   background-color: #eef4fb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -305,7 +320,39 @@ body {
   color: #333;
 }
 .page__detaljer li {
-  margin: 4px 0;
+  margin: 0.5rem 0;
+}
+
+/* Studenthistorie */
+
+.page__studenthistorie {
+  display: flex;
+  align-items: stretch;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  gap: 1rem;
+}
+.page__studenthistorie-content,
+.page__studenthistorie-image {
+  width: 50%;
+}
+
+.page__studenthistorie-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.page__studenthistorie-boks {
+  display: flex;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.page__studenthistorie-boks a {
+  display: flex;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  width: fit-content;
+  gap: 2rem;
+  text-decoration: none;
 }
 
 /* Slutt av hovedsiden */
@@ -314,7 +361,7 @@ body {
 
 .footer {
   background-color: rgb(255, 220, 0);
-  background-image: linear-gradient(to right, #4b9cd3, #003366);
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
 .footer__upper {
