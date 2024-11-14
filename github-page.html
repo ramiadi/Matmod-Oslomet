@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet/style.css" />
+  </head>
+  <body>
+    <header class="navbar">
+      <nav class="navbar__container">
+        <!-- Meny-ikon for mobilvisning (checkbox for å vise/skjule menyen) -->
+        <input type="checkbox" id="menu-toggle" class="navbar__toggle" />
+        <label for="menu-toggle" class="navbar__toggle-label">☰</label>
+
+        <!-- Logo -->
+        <a href="https://www.oslomet.no/" class="navbar__logo">
+          <img src="image/Oslomet-logo.png" alt="Oslomet-logo" />
+        </a>
+
+        <!-- Navigasjonslenker som alltid er synlige -->
+        <div class="navbar__links">
+          <a href="https://www.oslomet.no/" class="navbar__link">Forside</a>
+          <a href="https://www.oslomet.no/accessibility" class="navbar__link"
+            >Accessibility</a
+          >
+          <a href="https://www.oslomet.no/activity" class="navbar__link"
+            >Activity</a
+          >
+        </div>
+
+        <!-- Dropdown-meny for de andre lenkene -->
+        <div class="navbar__dropdown">
+          <button class="navbar__dropdownbtn">Meny ☰</button>
+          <div class="navbar__dropdown-content">
+            <a href="https://www.oslomet.no/studier">Studier</a>
+            <a href="https://www.oslomet.no/forskning">Forskningen vår</a>
+            <a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a>
+            <a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a>
+            <a href="https://www.oslomet.no/om">Om Oslomet</a>
+            <a href="https://www.oslomet.no/om/kontakt">Kontakt</a>
+            <a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
+          </div>
+        </div>
+
+        <!-- Søk -->
+        <div class="navbar__search">
+          <a href="#" class="navbar__link navbar__search-link">Søk 🔍</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Seksjon for bilder -->
+    <section class="image-gallery">
+      <h2>Screenshot fra Github</h2>
+      <div class="image-gallery__container">
+        <!-- Bruk PNG-bilder -->
+        <img
+          src="image/images:Github-page/Skjermbilde 2024-11-07 150833.png"
+          alt="Bilde 1"
+          class="image-gallery__item"
+        />
+        <img
+          src="image/images:Github-page/Skjermbilde 2024-11-07 151250.png"
+          alt="Bilde 2"
+          class="image-gallery__item"
+        />
+        <img
+          src="image/images:Github-page/Skjermbilde 2024-11-07 151701.png"
+          alt="Bilde 3"
+          class="image-gallery__item"
+        />
+        <img
+          src="image/images:Github-page/Skjermbilde 2024-11-07 152015.png"
+          alt="Bilde 4"
+          class="image-gallery__item"
+        />
+      </div>
+    </section>
+  </body>
+</html>
