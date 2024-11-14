@@ -344,10 +344,15 @@ body {
 
 .page__studenthistorie-boks {
   display: flex;
-  flex-shrink: 1;
+  justify-content: center;
+  margin-block: 2rem;
+}
+.page__studenthistorie-boks a {
+  display: flex;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  width: fit-content;
   gap: 2rem;
-  border: 3px solid red;
-  max-width: fit-content;
+  text-decoration: none;
 }
 
 /* Slutt av hovedsiden */
