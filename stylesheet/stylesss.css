@@ -10,7 +10,7 @@ body {
 
 }
 @media screen and (max-width: 800px) {
-  .page {
+  .main__page {
     padding: 1rem;
   }
 }
@@ -47,46 +47,11 @@ body {
 
 /* Slutt av heading */
 
-/* Start av hovedsiden */
-.page__image {
-  width: 100%;
-}
-
-.page__table {
-  width: 100%;
-}
-.page__table tr {
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid black;
-  padding-block: 2rem 1rem;
-}
-
-.page__table th,
-.page__table td {
-  line-height: 1;
-  font-size: 1.2rem;
-  text-align: left;
-  width: 100%;
-}
-
-/* Slutt av hovedsiden */
-
-/* Styling */
-.bar__icon--style {
-  font-size: 1.3rem;
-  font-weight: 700;
-}
-
-.left__studie--style {
-  color: black;
-  font-size: 1.2rem;
-  font-weight: 700;
-}
-
+/* Start av accessibility */
 .main__title {
 margin-left: 5rem;
 }
+
 .head__img {
 display: grid;
 grid-template-columns: repeat(2, 1fr);
@@ -127,5 +92,19 @@ min-width: 40rem;
 max-width: 40rem; 
 padding: 30px;
 font-size: 1.2rem;
+}
+
+/* Slutt av accessibility */
+
+/* Styling */
+.bar__icon--style {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.left__studie--style {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
