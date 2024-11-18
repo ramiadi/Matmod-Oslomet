@@ -1,0 +1,89 @@
+/* ---- Globale stiler ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px; /* Justerbar grunnstørrelse for rem-beregninger */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color:#fff
+  line-height 1.6;
+}
+
+/* ---- Navigasjon ---- */
+header{
+  background-color:#004080; /* Mørkeblå bakgrunn for navigasjonen */
+  color: #fff
+  padding 0.625rem 0; /* 0.625rem */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* Litt avstand mellom lenker */
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffffe7;
+  padding: 0 0.95rem; /* 0.9500rem */
+}
+
+nav a:hover {
+  color: #ffcc00; /* Endrer farge ved hover */
+}
+
+/* ---- Hovedinnhold ---- */
+main {
+  padding: 1.25rem; /*  1.25rem */
+  max-width: 50rem; /*  50rem */
+  margin: auto;
+}
+
+/* ---- Seksjonsstiler ---- */
+section {
+  margin-bottom: 1.25rem; /* 1.25rem */
+}
+
+/* Galleri med bilder */
+.gallery {
+  display: flex;
+  gap: 0.625rem; /* 0.625rem */
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 48%; /* To bilder per rad på desktop */
+  border-radius: 0.5rem; /* 0.5rem */
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Litt zoom-effekt ved hover */
+}
+
+/* ---- Footer ---- */
+footer {
+  background-color: #004080;
+  color: #fff;
+  text-align: center;
+  padding: 0.625rem 0; /* 0.625rem */
+}
+
+/* ---- Responsiv design ---- */
+@media (max-width: 48em) { /* 768px blir 48rem */
+  nav ul {
+      flex-direction: column;
+  }
+
+  .gallery img {
+      width: 100%; /* Full bredde for bilder på mobil */
+  }
+}
