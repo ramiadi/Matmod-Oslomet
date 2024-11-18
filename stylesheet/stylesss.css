@@ -18,9 +18,10 @@ body {
 /* Heading */
 .bar {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  background-color: rgb(255, 220, 0);
+  align-items: center;
+  background-color: #0077cc;
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
 .bar__image {
