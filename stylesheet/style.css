@@ -444,9 +444,7 @@ body {
 .github__overskrift {
   background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
-
 .image-gallery__item {
-  width: 100%;
   max-width: 30rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
