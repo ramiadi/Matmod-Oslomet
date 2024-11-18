@@ -441,30 +441,15 @@ body {
 
 /* Github page styling */
 
-.image-gallery {
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.github__underoverskrift {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.image-gallery__container {
-  display: flex;
-  justify-content: space-around;
-  gap: 20px;
-  flex-wrap: wrap;
+.github__overskrift {
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
 .image-gallery__item {
   width: 100%;
-  max-width: 300px;
-  height: auto;
+  max-width: 30rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
 }
 
 .image-gallery__item:hover {
