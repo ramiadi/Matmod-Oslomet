@@ -1,82 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/style.css" />
-  </head>
 
-  <body>
-    <header class="navbar">
-      <nav class="navbar__container">
-        <!-- Meny-ikon for mobilvisning (checkbox for å vise/skjule menyen) -->
-        <input type="checkbox" id="menu-toggle" class="navbar__toggle" />
-        <label for="menu-toggle" class="navbar__toggle-label">☰</label>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="stylesheet/style.css" />
+</head>
 
-        <!-- Logo -->
-        <a href="https://www.oslomet.no/" class="navbar__logo">
-          <img src="image/Oslomet-logo.png" alt="Oslomet-logo" />
-        </a>
+<body>
+  <header class="bar">
+    <div class="bar__icon bar__icon--style">
+      <!-- Logo -->
+      <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo-fjernet-bakgrunn.png" alt="Oslomet-logo"
+          class="bar__image">
+      </a>
 
-        <!-- Navigasjonslenker som alltid er synlige -->
-        <div class="navbar__links">
-          <a href="https://www.oslomet.no/" class="navbar__link">Forside</a>
-          <a href="https://www.oslomet.no/accessibility" class="navbar__link"
-            >Accessibility</a
-          >
-          <a href="https://www.oslomet.no/activity" class="navbar__link"
-            >Activity</a
-          >
-        </div>
-
-        <!-- Dropdown-meny for de andre lenkene -->
-        <div class="navbar__dropdown">
-          <button class="navbar__dropdownbtn">Meny ☰</button>
-          <div class="navbar__dropdown-content">
-            <a href="https://www.oslomet.no/studier">Studier</a>
-            <a href="https://www.oslomet.no/forskning">Forskningen vår</a>
-            <a href="https://www.oslomet.no/om/samarbeid">Samarbeid</a>
-            <a href="https://www.oslomet.no/ub">Universitetsbiblioteket</a>
-            <a href="https://www.oslomet.no/om">Om Oslomet</a>
-            <a href="https://www.oslomet.no/om/kontakt">Kontakt</a>
-            <a href="https://www.oslomet.no/om/for-studenter">For studenter</a>
-          </div>
-        </div>
-
-        <!-- Søk -->
-        <div class="navbar__search">
-          <a href="#" class="navbar__link navbar__search-link">Søk 🔍</a>
-        </div>
-      </nav>
-    </header>
-
-    <!-- Seksjon for bilder -->
-    <section class="image-gallery">
-      <h2>Screenshot fra Github</h2>
-      <div class="image-gallery__container">
-        <!-- Bruk PNG-bilder -->
-        <img
-          src="image/images:Github-page/Skjermbilde 2024-11-07 150833.png"
-          alt="Bilde 1"
-          class="image-gallery__item"
-        />
-        <img
-          src="image/images:Github-page/Skjermbilde 2024-11-07 151250.png"
-          alt="Bilde 2"
-          class="image-gallery__item"
-        />
-        <img
-          src="image/images:Github-page/Skjermbilde 2024-11-07 151701.png"
-          alt="Bilde 3"
-          class="image-gallery__item"
-        />
-        <img
-          src="image/images:Github-page/Skjermbilde 2024-11-07 152015.png"
-          alt="Bilde 4"
-          class="image-gallery__item"
-        />
+      <!-- Navigasjonslenker som alltid er synlige -->
+      <div class="bar__meny">
+        <a href="https://www.oslomet.no/" class="bar__link bar__link--style">Hovedside</a>
+        <a href="https://www.oslomet.no/accessibility" class="bar__link bar__link--style">Accessibility</a>
+        <a href="https://www.oslomet.no/activity" class="bar__link bar__link--style">Activity</a>
       </div>
-    </section>
-  </body>
+    </div>
+
+    <!-- Søk -->
+    <a href="#" style="text-decoration: none;" class="bar__search bar__search--style">Søk 🔍</a>
+
+  </header>
+
+  <!-- Seksjon for bilder -->
+  <article class="github">
+    <div class="github__overskrift">
+      <h1>
+        Samarbeid ved bruk av Github
+      </h1>
+    </div>
+
+    <h2 class="github__underoverskrift">Endringer og forbedringer av koder</h2>
+    <p class="github__tekst">GitHub gjorde det enkelt med å endre linjer slik at alle teammedlemmer kan se på de nyeste
+      kodene som har blitt
+      lagt til. Vi valgte å bruke Github Desktop. Github Desktop gjorde det lett å opprette flere braches og gi de
+      nyeste oppdateringene slik at alle sammen kan se hvilken endringer har blitt gjort. Gjennom pull request kan alle
+      sammen i laget kommentere og godkjenne endringer før det blir lagt til i hovedkoden (main). Ved å bruke Github
+      gjorde det at koden ble ryddig og oversiktlig</p>
+    <img src="image/images-Github-page/Skjermbilde 2024-11-07 150833.png" alt="Bilde av kode-endringer eksempel 1"
+      class="image-gallery__item">
+    <img src="image/images-Github-page/Skjermbilde 2024-11-07 151250.png" alt="Bilde av kode-endringer eksempel 2"
+      class="image-gallery__item">
+
+    <h2 class="github__underoverskrift">Historikk over Commits</h2>
+    <p class="github__tekst">Ved å bruke Github gjorde det lettere å se på spesifikke endringer som en teammedlem har
+      gjort. Vi brukte Github desktop som gjør det enkelt for teammedlemmer for å spore etter endringer i våres prosjekt
+      over tid. Commit-historikken i Github gir detaljer om hver endring , hvem som har gjort den, hva som er blir
+      endret og når endringen har skjedd. Dette gjør at teamet får et klart bilde av utviklingen av prosjekter og det
+      gjør det lettere å finne og forstå feil i kodebasen.</p>
+    <img src="image/images-Github-page/Skjermbilde 2024-11-07 150833.png" alt="Commit-Historikk eksempel 1"
+      class="image-gallery__item">
+    <img src="image/images-Github-page/Skjermbilde 2024-11-07 151250.png" alt="Commit Historikk eksempel 2"
+      class="image-gallery__item">
+
+
+    <h2 class="github__underoverskrift">Fordeler ved Bruk av Git</h2>
+    <p class="github__tekst">
+      <strong>Sporbarhet:</strong> Git gir en tydelig historikk over alle endringer, slik at teamet kan spore
+      utviklingen av prosjektet og gjenopprette tidligere versjoner hvis det oppstår problemer.
+    </p>
+    <p class="github__tekst"><strong>Parallell utvikling:</strong> Flere utviklere kan jobbe på samme prosjekt samtidig
+      uten å overskrive
+      hverandres kode, takket være branch-funksjonaliteten.</p>
+    <p class="github__tekst"><strong>Effektiv feilsøking:</strong> Ved hjelp av commits og branches kan man isolere og
+      løse feil raskere.
+    </p>
+    </ul>
+  </article>
+</body>
+
 </html>
