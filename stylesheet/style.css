@@ -385,7 +385,7 @@ body {
   gap: 2rem;
   text-decoration: none;
   color: white;
-  transition: all 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94); /* Smidig overgang */
+  transition: all 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
 
 /* Slutt av hovedsiden */
@@ -393,7 +393,6 @@ body {
 /* Footer */
 
 .footer {
-  background-color: rgb(255, 220, 0);
   background-image: linear-gradient(to right, #4b9cd3, #0077cc);
   color: white;
 }
