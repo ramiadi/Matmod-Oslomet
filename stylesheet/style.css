@@ -529,10 +529,9 @@ body {
 
 /* Github page styling */
 .github {
-  background-color: #f9f9f9;
 }
 .github__overskrift {
-  background-color: #0077cc;
+  background-image: linear-gradient(to right, rgb(102, 118, 120), #003366);
   color: #fff;
   padding: 1.5rem;
   text-align: center;
