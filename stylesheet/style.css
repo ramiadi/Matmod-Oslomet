@@ -193,6 +193,8 @@ body {
 .page__tekst {
   text-align: center;
 }
+
+/* Inputs og labels */
 .page__trekk {
   margin: 1.2rem auto;
 }
@@ -214,6 +216,7 @@ body {
   font-weight: bold;
   display: flex;
   align-items: center;
+  gap: 1rem;
 }
 .page__trekk-content {
   max-height: 0;
@@ -221,14 +224,25 @@ body {
   background-color: #f9f9f9;
   padding: 0 1rem;
 }
-
+.page__trekk-content p,
+.page__trekk-liste {
+  font-size: 1.2rem;
+}
+.page__trekk-content a {
+  color: black;
+  font-size: 800;
+}
+.page__trekk-content a:hover {
+  color: #0077cc;
+}
 .page__trekk-item input[type="checkbox"]:checked ~ .page__trekk-content {
   max-height: fit-content;
   padding: 15px;
 }
 
 .page__trekk-header::before {
-  content: "⬇️";
+  /* content: "⬇️"; */
+  content: "↪";
   font-size: 1.5rem;
   transform: rotate(0);
 }
@@ -269,6 +283,32 @@ body {
   align-items: center;
   padding: 1.2rem;
   border-radius: 10px;
+}
+
+.page__wrapper-link {
+  text-decoration: none;
+  color: #0077cc;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+.page__wrapper-link p {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #eef4fb;
+  border: 2px solid #0077cc;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+.page__wrapper-link:hover {
+  background-color: #d9ecff;
+  transform: translateY(-2px);
+  text-decoration: underline;
+  border-radius: 8px;
+}
+.page__wrapper-link p:hover {
+  color: #0056b3;
 }
 
 .page__faglig-leder-boks {
@@ -316,7 +356,6 @@ body {
   border: 2px solid #0077cc;
   border-radius: 10px;
   padding: 1rem;
-  /* background-color: #f9f9f9; */
   background-color: #eef4fb;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -460,6 +499,13 @@ body {
 /* Slutten av footer */
 
 /* Styling */
+
+.page__heading--style {
+  font-size: 2rem;
+}
+.page__tekst--style {
+  font-size: 1.75rem;
+}
 
 .page__boks--style,
 .bar__dropdownbtn--style,
