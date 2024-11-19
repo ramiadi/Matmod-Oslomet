@@ -528,16 +528,50 @@ body {
 }
 
 /* Github page styling */
-
+.github {
+  background-color: #f9f9f9;
+}
 .github__overskrift {
-  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  background-color: #0077cc;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
 }
-.image-gallery__item {
-  max-width: 30rem;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.github__section {
+  border-bottom: 1px solid #ddd;
+  padding: 1.5rem;
 }
 
-.image-gallery__item:hover {
+.github__underskrift {
+  color: #0077cc;
+  margin-block-end: 1rem;
+}
+.github__tekst {
+  color: #333;
+  line-height: 1.5;
+}
+.github__image {
+  display: flex;
+  gap: 1rem;
+  margin-block-start: 1rem;
+  overflow-x: auto;
+}
+
+.github__image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+.github__image img:hover {
   transform: scale(1.05);
+}
+
+.github__liste {
+  list-style-type: decimal;
+  line-height: 1.5;
+}
+.github__liste li {
+  margin-block: 1rem;
 }
