@@ -18,9 +18,9 @@
 
       <!-- Navigasjonslenker som alltid er synlige -->
       <div class="bar__meny">
-        <a href="https://www.oslomet.no/" class="bar__link bar__link--style">Hovedside</a>
-        <a href="https://www.oslomet.no/accessibility" class="bar__link bar__link--style">Accessibility</a>
-        <a href="https://www.oslomet.no/activity" class="bar__link bar__link--style">Activity</a>
+        <a href="index.html" class="bar__link bar__link--style">Hjemmeside</a>
+        <a href="HTMLAccesibility.HTML" class="bar__link bar__link--style">Accessibility</a>
+        <a href="Activity.html" class="bar__link bar__link--style">Activity</a>
       </div>
     </div>
 
@@ -37,42 +37,74 @@
       </h1>
     </div>
 
-    <h2 class="github__underoverskrift">Endringer og forbedringer av koder</h2>
-    <p class="github__tekst">GitHub gjorde det enkelt med å endre linjer slik at alle teammedlemmer kan se på de nyeste
-      kodene som har blitt
-      lagt til. Vi valgte å bruke Github Desktop. Github Desktop gjorde det lett å opprette flere braches og gi de
-      nyeste oppdateringene slik at alle sammen kan se hvilken endringer har blitt gjort. Gjennom pull request kan alle
-      sammen i laget kommentere og godkjenne endringer før det blir lagt til i hovedkoden (main). Ved å bruke Github
-      gjorde det at koden ble ryddig og oversiktlig</p>
-    <img src="image/images-Github-page/Skjermbilde 2024-11-07 150833.png" alt="Bilde av kode-endringer eksempel 1"
-      class="image-gallery__item">
-    <img src="image/images-Github-page/Skjermbilde 2024-11-07 151250.png" alt="Bilde av kode-endringer eksempel 2"
-      class="image-gallery__item">
 
-    <h2 class="github__underoverskrift">Historikk over Commits</h2>
-    <p class="github__tekst">Ved å bruke Github gjorde det lettere å se på spesifikke endringer som en teammedlem har
-      gjort. Vi brukte Github desktop som gjør det enkelt for teammedlemmer for å spore etter endringer i våres prosjekt
-      over tid. Commit-historikken i Github gir detaljer om hver endring , hvem som har gjort den, hva som er blir
-      endret og når endringen har skjedd. Dette gjør at teamet får et klart bilde av utviklingen av prosjekter og det
-      gjør det lettere å finne og forstå feil i kodebasen.</p>
-    <img src="image/images-Github-page/Skjermbilde 2024-11-07 150833.png" alt="Commit-Historikk eksempel 1"
-      class="image-gallery__item">
-    <img src="image/images-Github-page/Skjermbilde 2024-11-07 151250.png" alt="Commit Historikk eksempel 2"
-      class="image-gallery__item">
+    <section class="github__section">
+      <h2 class="github__underoverskrift">Endringer og forbedringer av koder</h2>
+
+      <p class="github__tekst">GitHub gjorde det enkelt med å endre linjer slik at alle teammedlemmer kan se på de
+        nyeste
+        kodene som har blitt
+        lagt til. Vi valgte å bruke Github Desktop. Github Desktop gjorde det lett å opprette flere braches og gi de
+        nyeste oppdateringene slik at alle sammen kan se hvilken endringer har blitt gjort. Gjennom pull request kan
+        alle
+        sammen i laget kommentere og godkjenne endringer før det blir lagt til i hovedkoden (main). Ved å bruke Github
+        gjorde det at koden ble ryddig og oversiktlig. Github sitt verktøy gjorde det enkelt å opprette og ha oversikt
+        av flere branches, slik at vi kunne jobbe effektivt uten å risikere konflikter i koden.</p>
+      <div class="github__image">
+        <img src="image/images-Github-page/Skjermbilde 2024-11-07 151701.png" alt="Kodeendringer eksempel 1">
+        <img src="image/images-Github-page/Skjermbilde 2024-11-07 152015.png" alt="Kodeendringer eksempel 2">
+      </div>
+    </section>
 
 
-    <h2 class="github__underoverskrift">Fordeler ved Bruk av Git</h2>
-    <p class="github__tekst">
-      <strong>Sporbarhet:</strong> Git gir en tydelig historikk over alle endringer, slik at teamet kan spore
-      utviklingen av prosjektet og gjenopprette tidligere versjoner hvis det oppstår problemer.
-    </p>
-    <p class="github__tekst"><strong>Parallell utvikling:</strong> Flere utviklere kan jobbe på samme prosjekt samtidig
-      uten å overskrive
-      hverandres kode, takket være branch-funksjonaliteten.</p>
-    <p class="github__tekst"><strong>Effektiv feilsøking:</strong> Ved hjelp av commits og branches kan man isolere og
-      løse feil raskere.
-    </p>
-    </ul>
+    <section class="github__section">
+      <h2 class="github__underoverskrift">Historikk over Commits</h2>
+      <p class="github__tekst">Ved å bruke Github gjorde det lettere å se på spesifikke endringer som en teammedlem har
+        gjort. Vi brukte Github desktop som gjør det enkelt for teammedlemmer for å spore etter endringer i våres
+        prosjekt
+        over tid. Commit-historikken i Github gir detaljer om hver endring , hvem som har gjort den, hva som er blir
+        endret og når endringen har skjedd. Dette gjør at teamet får et klart bilde av utviklingen av prosjekter og det
+        gjør det lettere å finne og forstå feil i kodebasen. Hvis noe gikk galt, kunne vi enkelt gå tilbake til en
+        tidligere versjon for å rette opp i problemet. Ved bruk av GitHub sparte det oss mye tid og at prosjektet var
+        stabilt gjennom hele perioden.</p>
+
+      <div class="github__image">
+        <img src="image/images-Github-page/OppdaterteScreenShot.png" alt="Commit-Historikk eksempel 1">
+        <img src="image/images-Github-page/OppdaderteScreenShot2.png" alt="Commit-Historikk eksempel 2">
+      </div>
+    </section>
+
+    <section class="github__section">
+      <h2 class="github__underoverskrift">Fordeler ved Bruk av Git</h2>
+
+      <ul class="github__liste">
+        <li>
+          <strong>Sporbarhet:</strong> En av de største fordelene ved Git er evnen til å holde oversikt over alle
+          endringer
+          som blir gjort i et prosjekt. Dette gir teamet en tydelig historikk som gjør det enkelt å spore fremgangen,
+          finne
+          feil og, om nødvendig, gjenopprette tidligere versjoner av koden. Denne sporbarheten gir også et
+          sikkerhetsnett
+          som lar utviklere eksperimentere med nye funksjoner uten å bekymre seg for å ødelegge den eksisterende koden.
+        </li>
+        <li>
+          <strong>Parallell utvikling:</strong> Med Git kan flere utviklere jobbe på forskjellige deler av prosjektet
+          samtidig, uten risiko for å overskrive hverandres kode. Dette blir mulig takket være branch-funksjonaliteten,
+          som gjør det enkelt å isolere spesifikke funksjoner eller feilrettinger. Når arbeidet er ferdig, kan branchene
+          flettes tilbake til hovedgrenen på en kontrollert måte, noe som sikrer at alle endringer blir grundig evaluert
+          før de tas i bruk.
+        </li>
+        <li>
+          <strong>Effektiv feilsøking:</strong> Når feil oppstår i koden, gjør Git det enkelt å finne årsaken ved hjelp
+          av
+          commit-historikken. Dette lar utviklere isolere problemet og gå tilbake til tidligere fungerende versjoner.
+          Kombinert med muligheten til å lage separate branches for testing og feilsøking, blir feilretting en mye
+          raskere
+          og mer strukturert prosess.
+        </li>
+      </ul>
+    </section>
+
   </article>
 </body>
 

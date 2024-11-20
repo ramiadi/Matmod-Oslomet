@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matematisk modellering og datavitenskap</title>
     <link rel="stylesheet" href="stylesheet/style.css">
+    <link rel="icon" type="image/jpg" href="image/OsloMet-Bla-Logo.jpg">
     <!-- denne lenken er fra fontawesome (sosiale medier ikoner) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -40,9 +41,9 @@
                 <div class="bar__dropdown">
                     <button class="bar__dropdownbtn bar__dropdownbtn--style">Pages ▼</button>
                     <div class="bar__dropdown-content">
-                        <a href="#">Accesibility</a>
-                        <a href="#">Activity</a>
-                        <a href="#">Github</a>
+                        <a href="HTMLAccesibility.HTML">Tilgjengelighet</a>
+                        <a href="Activity.html">Aktivitet</a>
+                        <a href="github-page.html">Github</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +58,7 @@
 
     <!--Dette er kopiert kode fra Faysbashir (branch: adding-some-images-and-text) 
     fordi vi hadde problemer med å merge -->
-    <div class="page">
+    <article class="page">
         <img src="image/Anvendt-datateknologi_bachelor.jpg" alt="Bilde av studiet" class="page__image">
         <h1 class="page__heading page__heading--style">Matematisk modellering og datavitenskap –
             ingeniør</h1>
@@ -102,7 +103,7 @@
                 <td>40</td>
             </tr>
         </table>
-        <p>
+        <p class="page__tekst page__tekst--style">
             Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige
             oppgaver.
         </p>
@@ -110,21 +111,24 @@
         <div class="page__trekk">
             <div class="page__trekk-item">
                 <input type="checkbox" id="item1">
-                <label class="page__trekk-header" for="item1">Opptakskrav og poeng </label>
+                <label class="page__trekk-header" for="item1">Opptakskrav og poeng</label>
                 <div class="page__trekk-content">
                     <p>For å søke på dette programmet må du ha </p>
-                    <ul class="page__trekk-liste">
-                        <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/">generrell studiekompetanse
-                                (samordnaopptak.no)</a> eller <a
-                                href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior">oppfylle
-                                kravene til realkompetanse</a></li>
+                    <ul class="page__trekk-liste" style="list-style-type:decimal;">
+                        <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/"><b>generell
+                                    studiekompetanse
+                                    (samordnaopptak.no)</b></a> eller <a
+                                href="https://www.oslomet.no/studier/soknad-og-opptak/realkompetanse/realkompetanse-ingenior"><b>oppfylle
+                                    kravene til realkompetanse</b></a></li>
                         <li>matematikk R1 og R2</li>
                         <li>fysikk 1</li>
                     </ul>
                     <p>Det kan være konkurranse om plassene. Ved forrige opptak kom alle kvalifiserte søkere inn.</p>
                     <p>Hvis du mangler generell studiekompetanse eller enkelte fag fra videregående skole, kan du søke
-                        på dette studiet om du har <a href="https://www.oslomet.no/studier/tkd/forkurs-ingenior">bestått
-                            ettårig forkurs for ingeniørutdanning.</a></p>
+                        på dette studiet om du har <a
+                            href="https://www.oslomet.no/studier/tkd/forkurs-ingenior"><b>bestått
+                                ettårig forkurs for ingeniørutdanning.</b></a>
+                    </p>
 
                 </div>
             </div>
@@ -137,8 +141,10 @@
                         <li>15. april: ordinær søknadsfrist</li>
                         <li>1. mars: frist for enkelte søkere</li>
                     </ul>
-                    <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">Mer om å
-                        søke på bachelor</a>
+                    <a href="https://www.oslomet.no/studier/soknad-og-opptak/opptak-til-bachelor-aarsstudier">
+                        <p><b>Mer om å
+                                søke på bachelor</b></p>
+                    </a>
                 </div>
             </div>
             <div class="page__trekk-item">
@@ -156,7 +162,7 @@
                     <p>Første året velger du hvilken av disse spesialiseringene du vil ta.</p>
 
 
-                    <ul class="page__trekk-liste">
+                    <ul class="page__trekk-liste" style="list-style-type: none;">
                         <li>
                             <input type="checkbox" id="item4">
                             <label class="page__trekk-header" for="item4">Statiske og datadrevne metoder</label>
@@ -192,7 +198,10 @@
                     </ul>
 
                     <a href="https://student.oslomet.no/studier/-/studieinfo/programplan/HINGMAMO/2024/H%C3%98ST">
-                        < Se programplan på student.oslomet.no</a>
+                        <p><b>
+                                < Se programplan på student.oslomet.no</b>
+                        </p>
+                    </a>
                 </div>
             </div>
             <div class="page__trekk-item">
@@ -438,7 +447,7 @@
 
                     </div>
 
-                    <h2>Emnegruppe: Matematikk og fysikk</h2>
+                    <h3>Emnegruppe: Matematikk og fysikk</h3>
 
                     <div class="page__elementer">
                         <h2>5. semester</h2>
@@ -509,7 +518,7 @@
                         </ul>
                     </div>
 
-                    <h2>Emnegruppe: Statistiske og datadrevne metoder</h2>
+                    <h3>Emnegruppe: Statistiske og datadrevne metoder</h3>
 
                     <div class="page__elementer">
                         <h2>5. semester</h2>
@@ -576,7 +585,7 @@
 
 
 
-                    <h2>Emnegruppe: Vitenskapelige beregninger</h2>
+                    <h3>Emnegruppe: Vitenskapelige beregninger</h3>
 
                     <div class="page__elementer">
                         <h2>5. semester</h2>
@@ -673,13 +682,15 @@
                 <label class="page__trekk-header" for="item9">Hva koster det?</label>
                 <div class="page__trekk-content">
                     <a href="https://student.oslomet.no/semesteravgift">
-                        Du betaler en semesteravgift hvert semester (student.oslomet.no).
+                        <p>
+                            <b> Du betaler en semesteravgift hvert semester (student.oslomet.no).</b>
+                        </p>
                     </a>
 
-                    <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos">Er
-                            du
-                            internasjonal student fra utenfor EU og EØS, må du betale studieavgift
-                            (student.oslomet.no)</a>. Det er mulig å søke om unntak for betaling av denne
+                    <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos"><b>Er
+                                du
+                                internasjonal student fra utenfor EU og EØS, må du betale studieavgift
+                                (student.oslomet.no)</b>.</a> Det er mulig å søke om unntak for betaling av denne
                         studieavgiften.</p>
                 </div>
             </div>
@@ -708,139 +719,139 @@
             </div>
             <div class="page__trekk-item">
                 <input type="checkbox" id="item12">
-                <label class="page__trekk-header" for="item12">Utveksling</label>
+                <label class="page__trekk-header" for="item12">Videre studiemuligheter ved OsloMet</label>
                 <div class="page__trekk-content">
 
                     <div class="page__elementer">
-                        <li class="page__boks page__boks--style">
-                            <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
-                                Anvendt data- og informasjonsteknologi (ACIT)</a>
-                            <p style="margin-block: 0;">Masterprogram | 2år | Pilestredet i Oslo | Heltid</p>
+                        <ul class="page__trekk-liste" style="list-style-type: none;">
+                            <li class="page__boks page__boks--style">
+                                <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
+                                    Anvendt data- og informasjonsteknologi (ACIT)</a>
+                                <p style="margin-block: 0;">Masterprogram | 2år | Pilestredet i Oslo | Heltid</p>
 
-                        </li>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-
-            <div class="page__wrapper">
-
-                <h2>Studiested</h2>
-                <a href="https://www.oslomet.no/om/studiested-pilestredet">
-                    <p>Studiested Pilestredet</p>
-                </a>
-
-                <h2>Spørsmål om utdanningen?</h2>
-                <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">
-                    <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</p>
-                </a>
-
-
-                <h2>Faglig leder</h2>
-
-                <a href="https://www.oslomet.no/om/ansatt/krhel3944/" class="page__faglig-leder-boks">
-                    <table>
-                        <tr>
-                            <td rowspan="4" class="profile-image">
-                                <img src="image/faglig-leder.jpg" alt="Kristoffer Herland Hellton">
-                            </td>
-                            <th>Navn</th>
-                            <td>Kristoffer Herland Hellton</td>
-                        </tr>
-                        <tr>
-                            <th>Stilling</th>
-                            <td>Førsteamanuensis</td>
-                        </tr>
-                        <tr>
-                            <th>Telefon</th>
-                            <td>+47 672 37 240</td>
-                        </tr>
-                        <tr>
-                            <th>E-post</th>
-                            <td>kristoffer.hellton@oslomet.no</td>
-                        </tr>
-                    </table>
-                </a>
-
-
-            </div>
-
-
-
-            <h1 style="text-align: center;">Du er kanskje også interessert i disse?</h1>
-            <div class="page__grid-container">
-                <!-- Anvendt datateknologi -->
-                <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" class="page__grid-item">
-                    <h2 class="page__tittel">Anvendt datateknologi</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/maskiningenior" class="page__grid-item">
-                    <!-- Maskiningeniør -->
-                    <h2 class="page__tittel">Maskiningeniør</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/byggingenior" class="page__grid-item">
-                    <!-- Byggingeniør -->
-                    <h2 class="page__tittel">Byggingeniør</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/dataingenior" class="page__grid-item">
-                    <!-- Dataingeniør -->
-                    <h2 class="page__tittel">Dataingeniør</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" class="page__grid-item">
-                    <!-- Elektronikkingeniør -->
-                    <h2 class="page__tittel">Elektronikkingeniør</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" class="page__grid-item">
-                    <!-- Informasjonsteknologi -->
-                    <h2 class="page__tittel">Informasjonsteknologi</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" class="page__grid-item">
-                    <!-- Bioteknologi og kjemiingeniør -->
-                    <h2 class="page__tittel">Bioteknologi- og kjemiingeniør</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-                <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" class="page__grid-item">
-                    <!-- Tre termins-ordning -->
-                    <h2 class="page__tittel">Tre-terminsordning til ingeniørutdanning</h2>
-                    <ul class="page__detaljer">
-                        <li>Bachelorprogram | 3år</li>
-                        <li>Pilestredet i Oslo | Heltid</li>
-                    </ul>
-                </a>
-            </div>
         </div>
+
+        <div class="page__wrapper">
+
+
+            <h2>Studiested</h2>
+            <a class="page__wrapper-link" href="https://www.oslomet.no/om/studiested-pilestredet">
+                <p>Studiested Pilestredet</p>
+            </a>
+
+            <h2>Spørsmål om utdanningen?</h2>
+            <a class="page__wrapper-link" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">
+                <p>Har du spørsmål om utdanningen, kontakt oss gjennom vårt kontaktskjema.</p>
+            </a>
+
+
+            <h2>Faglig leder</h2>
+
+            <a href="https://www.oslomet.no/om/ansatt/krhel3944/" class="page__faglig-leder-boks">
+                <table>
+                    <tr>
+                        <td rowspan="4" class="profile-image">
+                            <img src="image/faglig-leder.jpg" alt="Kristoffer Herland Hellton">
+                        </td>
+                        <th>Navn</th>
+                        <td>Kristoffer Herland Hellton</td>
+                    </tr>
+                    <tr>
+                        <th>Stilling</th>
+                        <td>Førsteamanuensis</td>
+                    </tr>
+                    <tr>
+                        <th>Telefon</th>
+                        <td>+47 672 37 240</td>
+                    </tr>
+                    <tr>
+                        <th>E-post</th>
+                        <td>kristoffer.hellton@oslomet.no</td>
+                    </tr>
+                </table>
+            </a>
+        </div>
+
+        <h1 style="text-align: center;">Du er kanskje også interessert i disse?</h1>
+        <div class="page__grid-container">
+            <!-- Anvendt datateknologi -->
+            <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi" class="page__grid-item">
+                <h2 class="page__tittel">Anvendt datateknologi</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/maskiningenior" class="page__grid-item">
+                <!-- Maskiningeniør -->
+                <h2 class="page__tittel">Maskiningeniør</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/byggingenior" class="page__grid-item">
+                <!-- Byggingeniør -->
+                <h2 class="page__tittel">Byggingeniør</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/dataingenior" class="page__grid-item">
+                <!-- Dataingeniør -->
+                <h2 class="page__tittel">Dataingeniør</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/elektronikkingenior" class="page__grid-item">
+                <!-- Elektronikkingeniør -->
+                <h2 class="page__tittel">Elektronikkingeniør</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/informasjonsteknologi" class="page__grid-item">
+                <!-- Informasjonsteknologi -->
+                <h2 class="page__tittel">Informasjonsteknologi</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/bioteknologi-kjemiingenior" class="page__grid-item">
+                <!-- Bioteknologi og kjemiingeniør -->
+                <h2 class="page__tittel">Bioteknologi- og kjemiingeniør</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+            <a href="https://www.oslomet.no/studier/tkd/tre-termin-ingenior" class="page__grid-item">
+                <!-- Tre termins-ordning -->
+                <h2 class="page__tittel">Tre-terminsordning til ingeniørutdanning</h2>
+                <ul class="page__detaljer">
+                    <li>Bachelorprogram | 3år</li>
+                    <li>Pilestredet i Oslo | Heltid</li>
+                </ul>
+            </a>
+        </div>
+
 
         <h1>Studenthistorier</h1>
 
         <a href="" class="page__studenthistorie">
 
             <div class="page__studenthistorie-content">
-                <h3>Teknologi og design</h3>
+                <h1 class="page__studenthistorie-overskrift">Teknologi og design</h1>
 
                 <h2>Spå fremtiden med matematikk og datavitenskap</h2>
                 <p>Har du lyst til å finne ut hva som vil skje i fremtiden? Lær å bruke verktøy for å forutsi alt
@@ -858,7 +869,7 @@
                 <h2>></h2>
             </a>
         </div>
-    </div>
+    </article>
 
     <!-- Slutt av page -->
 
@@ -867,7 +878,8 @@
 
         <div class="footer__upper">
             <h1>Hold deg oppdatert på hva som skjer på Oslomet</h1>
-            <h2><a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt nyhetsbrev</a></h2>
+            <h2 class="footer__upper-link"><a href="https://www.oslomet.no/nyhetsbrev">Abonner på vårt
+                    nyhetsbrev</a></h2>
 
         </div>
 

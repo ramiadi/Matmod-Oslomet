@@ -12,15 +12,13 @@ html {
 body {
   font-family: Arial, sans-serif;
   color: #333;
-  background-color:#fff
-  line-height 1.6;
+  background-color: #fff line-height 1.6;
 }
 
 /* ---- Navigasjon ---- */
-header{
-  background-color:#004080; /* Mørkeblå bakgrunn for navigasjonen */
-  color: #fff
-  padding 0.625rem 0; /* 0.625rem */
+header {
+  background-color: #004080; /* Mørkeblå bakgrunn for navigasjonen */
+  color: #fff padding 0.625rem 0; /* 0.625rem */
 }
 
 nav ul {
@@ -78,12 +76,13 @@ footer {
 }
 
 /* ---- Responsiv design ---- */
-@media (max-width: 48em) { /* 768px blir 48rem */
+@media (max-width: 48em) {
+  /* 768px blir 48rem */
   nav ul {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .gallery img {
-      width: 100%; /* Full bredde for bilder på mobil */
+    width: 100%; /* Full bredde for bilder på mobil */
   }
 }
