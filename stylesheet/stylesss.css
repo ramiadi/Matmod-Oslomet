@@ -7,7 +7,6 @@ body {
   .bar {
     padding-inline: 5rem;
   }
-
 }
 @media screen and (max-width: 800px) {
   .main__page {
@@ -50,49 +49,49 @@ body {
 
 /* Start av accessibility */
 .main__title {
-margin-left: 5rem;
+  margin-left: 5rem;
 }
 
 .head__img {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(2, 200px);
-gap: 15px;
-float: right;
-position: relative;
-margin-right: 5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 200px);
+  gap: 15px;
+  float: right;
+  position: relative;
+  margin-right: 5rem;
 }
 
 .head__img img {
-object-fit: cover;
-width: 100%;
-height: 100%;
-transition: transform 0.3s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
 }
 
 .head__img img:hover {
-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .twoboxes {
-grid-column: span 2;
+  grid-column: span 2;
 }
 
 .top__page {
-background-image: url(../image/Bakgrunn_topp.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-height: 500px;
-width: 100%;
+  background-image: url(../image/Bakgrunn_topp.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
 }
 
 .page__aboutproject {
-text-align: left;
-width: 100%; 
-min-width: 40rem;
-max-width: 40rem; 
-padding: 30px;
-font-size: 1.2rem;
+  text-align: left;
+  width: 100%;
+  min-width: 40rem;
+  max-width: 40rem;
+  padding: 30px;
+  font-size: 1.2rem;
 }
 
 /* Slutt av accessibility */
@@ -108,4 +107,3 @@ font-size: 1.2rem;
   font-size: 1.2rem;
   font-weight: 700;
 }
-
