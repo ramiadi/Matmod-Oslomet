@@ -73,9 +73,9 @@ body {
 /* Heading */
 .bar {
   display: flex;
-  justify-content: space-between; /*Denne koden gjør at "boksene" i header skal dra så langt som mulig fra hverandre */
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /*Hvis det er lite plass, så skal det dannes under */
+  flex-wrap: wrap;
   background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
@@ -150,6 +150,13 @@ body {
 
 .bar__dropdown:focus-within .bar__dropdown-content,
 .bar__dropdown:active .bar__dropdown-content {
+  display: block;
+}
+
+.bar__link:hover {
+  border-bottom: 2px solid white;
+}
+.bar__dropdown:focus-within {
   display: block;
 }
 
@@ -535,14 +542,13 @@ body {
 }
 
 .github__image img {
-  max-width: 80%;
-  height: auto;
+  max-width: 100%;
   border-radius: 8px;
   box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease;
 }
 .github__image img:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .github__liste {
