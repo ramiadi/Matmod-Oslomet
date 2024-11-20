@@ -503,12 +503,16 @@ body {
 .page__boks--style,
 .bar__dropdownbtn--style,
 .bar__link--style,
-.bar__search--style {
+.bar__search--style,
+.accesibility__tekst--style,
+.github__tekst--style {
   font-size: 1.2rem;
 }
 
 .footer__tableMiddle--style,
-.footer__tableRight--style {
+.footer__tableRight--style,
+.github__tekst--style,
+.accesibility__tekst--style {
   line-height: 1.5;
 }
 
@@ -521,33 +525,42 @@ body {
   padding: 1.5rem;
   text-align: center;
 }
-.github__section {
+.github__section,
+.accesibility__section {
   border-bottom: 1px solid #ddd;
   padding: 1.5rem;
 }
 
-.github__underskrift {
+.github__underoverskrift {
   color: #0077cc;
   margin-block-end: 1rem;
 }
-.github__tekst {
-  color: #333;
-  line-height: 1.5;
+.accesibility__tekst {
+  /* background-color: rgba(255, 255, 255, 0.317); */
+  background-image: linear-gradient(
+    to right,
+    rgba(69, 105, 144, 0.9),
+    rgba(41, 50, 60, 0.9)
+  );
 }
-.github__image {
+
+.github__image,
+.accesibility__image {
   display: flex;
   gap: 1rem;
   margin-block-start: 1rem;
   overflow-x: auto;
 }
 
-.github__image img {
+.github__image img,
+.accesibility__image img {
   max-width: 100%;
   border-radius: 8px;
   box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
   transition: transform 0.25s ease;
 }
-.github__image img:hover {
+.github__image img:hover,
+.accesibility__image img:hover {
   transform: scale(1.01);
 }
 
@@ -607,16 +620,6 @@ body {
   margin: 2rem auto;
   padding: 2rem;
   max-width: 40rem;
-  font-size: 1.2rem;
-  text-align: justify;
-}
-.page__text {
-  margin: 2rem auto;
-  max-width: 40rem;
-  padding: 1rem;
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Slutt av accessibility */

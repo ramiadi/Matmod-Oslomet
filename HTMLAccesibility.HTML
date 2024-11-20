@@ -49,49 +49,45 @@
                 design ved hjelp av HTML og CSS, og vise til testing gjennomført for kvalitetssikring av kodingen
             </h2>
 
-            <section class="github__section">
+            <section class="accesibility__section">
 
 
-                <p class="github__tekst">GitHub gjorde det enkelt med å endre linjer slik at alle teammedlemmer kan se
-                    på de
-                    nyeste
-                    kodene som har blitt
-                    lagt til. Vi valgte å bruke Github Desktop. Github Desktop gjorde det lett å opprette flere braches
-                    og gi de
-                    nyeste oppdateringene slik at alle sammen kan se hvilken endringer har blitt gjort. Gjennom pull
-                    request kan
-                    alle
-                    sammen i laget kommentere og godkjenne endringer før det blir lagt til i hovedkoden (main). Ved å
-                    bruke Github
-                    gjorde det at koden ble ryddig og oversiktlig. Github sitt verktøy gjorde det enkelt å opprette og
-                    ha oversikt
-                    av flere branches, slik at vi kunne jobbe effektivt uten å risikere konflikter i koden.</p>
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    Våres gruppe har lagt stor vekt på tilgjengelighet i utformingen av nettsidene, slik at innholdet er
+                    brukervennlig for alle. For at nettsiden er sånn som den er nå, har vi skrevet inn media queries som
+                    tilpasser designet til ulike skjermstørrelser, slik at det fungerer både for små og store skjermer.
+                    For bildene har vi brukt <b>max-width: 100%</b> slik at bildene skalerer seg og aldri overskrider
+                    sin tilgjengelige "container". I tillegg har vi tatt med flere responsive grids og flexbox for
+                    layout, som gir en struktur der de justerer elementenes plassering og størrelse basert på skjermens
+                    bredde. Dette sikrer seg at nettsiden er oversiktlig, lett navigerbar og leselig, uansett hvilken
+                    enhet som brukes.
+                </p>
 
-                <div class="github__image">
+                <div class="accesibility__image">
                     <img src="image/images-Github-page/Test-performance-1.png" alt="Kodeendringer eksempel 1">
                     <img src="image/images-Github-page/Test-Performance-2.png" alt="Kodeendringer eksempel 2">
                 </div>
 
             </section>
 
-            <section class="github__section">
+            <section class="accesibility__section">
 
                 <h1>Tilgjengelighet ved bruk av fargevalg og kontrast</h1>
 
-                <p class="github__tekst">
+                <p class="accesibility__tekst accesibility__tekst--style">
                     Vi har brukt blå gradientbakgrunn med hvit tekst på. Ved bruk av dette skaper det en god kontrast
                     mellom tekst og bakgrunn slik at det blir en god lesbarhet.
                 </p>
-                <p class="github__tekst">
+                <p class="accesibility__tekst accesibility__tekst--style">
                     <b>Headingene</b> og <b>foterene</b> bruker høy kontrast med hvit tekst på blå gradientbakgrunn eks:
                     (background-image: linear-gradient(to right, #4b9cd3, #0077cc) i .bar og .footer). I headeren har vi
                     laget en "class" som heter .bar__link. Alle linkene i headeren har hvit bakgrunn. Ved bruk av disse
                     fargene hjelper det brukere med redusert syn å forstå elementer som er interaktive.
                 </p>
 
-                <h1>Tilpasning av enkel lesbarhet</h1>
+                <h1>Tilpasning av tekstlesbarhet</h1>
 
-                <p class="github__tekst">
+                <p class="accesibility__tekst accesibility__tekst--style">
                     Vi har gjort noen endringer med tekststørrelsen og linjehøyder på enkelte seksjoner i nettsiden.
                     Overskrifter som <b>.page__heading--style</b> har store skrifttyper (2rem for å fremheve viktige
                     seksjoner). Vi har også brukt i tekster "paragraphs" i en lettlest størrelse i (1.2rem) og samtidig
@@ -101,7 +97,7 @@
 
                 <h1>Navigasjonsvennlighet</h1>
 
-                <p class="github__tekst">
+                <p class="accesibility__tekst accesibility__tekst--style">
                     Vi har gjort navigasjonen for brukere enkelt med både mus og tastatur. Dropdown-menyen i
                     <b>.bar__dropdown</b> gjør bruk av <b>:focus:within</b> og <b>:hover</b> for å vise innhold. Dette
                     sikrer at tastaturbrukere kan navigere effektivt uten mus. Vi har testet dette med tab-knappen.
@@ -109,24 +105,27 @@
                     elementer
                 </p>
                 <h1>Tilrettelegging for tastaturbrukere</h1>
-                <p class="github__tekst">
+                <p class="accesibility__tekst accesibility__tekst--style">
                     For brukere som navigerer med tastatur, er det lagt til fokus i <b>.bar__dropdown:focus-within</b>
                     som viser skjulte menyer. Dette er spesielt nyttig i hovedmenyer slik at tastaturbrukere kan
                     navigere lett.
                 </p>
-                <div class="github__image">
-                    <img src="image/eksempelAvKode-1.png" alt="Kodeendringer eksempel 1">
+
+                <h1>Responsiv Design</h1>
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    For å sikre tilgjengelighet på forskjellige skjermer, tilpasser designet seg gjennom media queries.
+                    Vi har brukt media queries for alle brukere av ulike skjerm.
+                </p>
+                <div class="accesibility__image">
+                    <img src="image/eksempelAvKode-1.png" alt="">
                     <img src="image/eksempelAvKode-2.png" alt="">
                     <img src="image/eksempelAvKode-3.png" alt="">
+                    <img src="image/eksempelAvKode-4.png" alt="">
+
                 </div>
 
             </section>
         </div>
-
-        <p class="page__text" style="font-family: Arial, Helvetica, sans-serif;">
-            Vi hadde et ønske om å optimalisere hjemmesiden Oslomet bruker for informasjon om bachelorprogrammet
-            Matematisk modellering og datavitenskap - ingeniør.
-        </p>
 
     </main>
 
