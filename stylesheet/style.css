@@ -1,8 +1,10 @@
 /* https://x.com/NOVAnytt/photo */
 
+html,
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+  height: 100%; /* Sikrer at de fyller hele visningen */
 }
 
 /* Legger til media query skjerm bredde for laptop og desktop brukere */
@@ -24,10 +26,6 @@ body {
 }
 /* Legger til media query skjerm bredde for de med mindre bredde (mobilbrukere) */
 @media screen and (max-width: 800px) {
-  body {
-    height: 100dvh;
-  }
-
   .bar,
   .bar__icon,
   .navbar__liste {
