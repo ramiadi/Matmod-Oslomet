@@ -68,6 +68,10 @@ body {
   .page__studenthistorie {
     flex-direction: column-reverse;
   }
+  .github__image,
+  .accesibility__image {
+    overflow-x: auto;
+  }
   .github__image img,
   .accesibility__image img {
     min-width: 100%;
@@ -555,7 +559,6 @@ body {
   display: flex;
   gap: 1rem;
   margin-block-start: 1rem;
-  overflow-x: auto;
 }
 
 .github__image img,
