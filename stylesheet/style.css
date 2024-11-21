@@ -75,7 +75,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+}
+.bar--farge {
   background-image: linear-gradient(to right, #4b9cd3, #0077cc);
 }
 
@@ -91,19 +92,16 @@ body {
 }
 
 .bar__link {
-  color: white;
   padding: 0.5rem 1rem;
   transition: 0.3s ease;
   text-decoration: none;
 }
 
-.bar__search {
+.bar__search--farge,
+.bar__link--farge {
   color: white;
 }
 /* Dropdown knapp (Alt som er om dropdown meny er hentet fra denne lenken) https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
-
-.bar__meny {
-}
 
 .bar__dropdown {
   position: relative;
@@ -130,8 +128,8 @@ body {
 }
 .bar__dropdownbtn:hover,
 .bar__dropdownbtn:active,
-.bar__link:hover,
-.bar__link:active {
+.bar__link--style:hover,
+.bar__link--style:active {
   border-bottom: 2px solid white;
   transform: scale(1.05);
 }
@@ -163,9 +161,6 @@ body {
 /* Slutt av heading */
 
 /* Start av hovedsiden */
-.page {
-}
-
 .page__image,
 .page__table {
   width: 100%;
@@ -210,7 +205,6 @@ body {
   color: white;
   padding: 1rem; /* Lager mellomrom slik at boksen blir større */
   cursor: pointer; /*gjør sånn at brukere skal forstå lettere at man skal trykke på listene */
-  font-weight: bold;
   display: flex;
   align-items: center; /*har brukt flex og align items center slik at jeg får teksten også i midten */
   gap: 1rem; /* Emojiene og tittelene har en liten avstand mellom  */
@@ -500,6 +494,13 @@ body {
   font-size: 1.75rem;
 }
 
+.github__liste--style {
+  list-style-type: decimal;
+}
+.page__trekk-header--style {
+  font-weight: bold;
+}
+
 .page__boks--style,
 .bar__dropdownbtn--style,
 .bar__link--style,
@@ -512,11 +513,12 @@ body {
 .footer__tableMiddle--style,
 .footer__tableRight--style,
 .github__tekst--style,
+.github__liste--style,
 .accesibility__tekst--style {
   line-height: 1.5;
 }
 
-/* Github page styling */
+/* Github og accesibility page styling */
 .github {
 }
 .github__overskrift {
@@ -563,30 +565,11 @@ body {
 .accesibility__image img:hover {
   transform: scale(1.01);
 }
-
-.github__liste {
-  list-style-type: decimal;
-  line-height: 1.5;
-}
-.github__liste li {
-  margin-block: 1rem;
-}
-
-/* Tilgjengelig nettside */
-
-.main__title {
-  margin: 2rem auto;
-  text-align: center;
-}
-
 .head__img {
   display: grid;
-  /* grid-template-columns: repeat(2, 1fr); */
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
-  justify-content: center;
   align-items: center;
-  margin: 2rem auto;
 }
 
 .head__img img {
@@ -599,6 +582,14 @@ body {
 
 .head__img img:hover {
   transform: scale(1.05);
+}
+
+.github__liste li {
+  margin-block: 1rem;
+}
+
+.main__title {
+  text-align: center;
 }
 
 .twoboxes {
@@ -622,4 +613,4 @@ body {
   max-width: 40rem;
 }
 
-/* Slutt av accessibility */
+/* Slutt av accessibility og github */
