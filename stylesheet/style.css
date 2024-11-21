@@ -1,27 +1,8 @@
-/* https://x.com/NOVAnytt/photo */
-
 body {
   margin: 0;
   padding: 0;
 }
 
-/* Legger til media query skjerm bredde for laptop og desktop brukere */
-@media screen and (min-width: 800px) {
-  .bar,
-  .footer {
-    padding-inline: 4rem;
-  }
-
-  .page {
-    margin-block-start: 3rem;
-    margin-inline: 4rem;
-  }
-
-  .page__liste {
-    display: flex;
-    flex-direction: row;
-  }
-}
 /* Legger til media query skjerm bredde for de med mindre bredde (mobilbrukere) */
 @media screen and (max-width: 800px) {
   .bar,
@@ -30,15 +11,12 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
-
   .bar,
   .page,
   .footer {
     padding: 1rem;
   }
-
   .footer__page {
-    display: flex;
     flex-direction: column;
   }
   .page__elementer,
@@ -69,6 +47,7 @@ body {
   .page__studenthistorie {
     flex-direction: column-reverse;
   }
+  /* putt en horisonalt skroll */
   .github__image,
   .accesibility__image {
     overflow-x: auto;
@@ -82,7 +61,6 @@ body {
     align-items: flex-start !important;
     gap: 1rem;
   }
-
   .gallery img {
     width: 100% !important; /* Full bredde for bilder på mobil */
   }
@@ -91,15 +69,42 @@ body {
   }
 }
 
+/* Legger til media query skjerm bredde for laptop og desktop brukere */
+@media screen and (min-width: 800px) {
+  .bar,
+  .footer {
+    padding-inline: 4rem;
+  }
+
+  .page {
+    margin-block-start: 3rem;
+    margin-inline: 4rem;
+  }
+
+  .page__liste {
+    display: flex;
+    flex-direction: row;
+  }
+  .bar {
+    position: sticky; /*Header skal følge etter*/
+    top: 0; /*Skal alltid være toppen av nettsiden*/
+    z-index: 1000; /*Slik at header alltid ligger over alle andre elementer*/
+  }
+}
+
 /* Heading (alt som har classen "navbar" er for activity page) */
 .bar,
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Putter alle boksene med helt til kantene*/
   align-items: center;
 }
 .bar--farge {
-  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  background-image: linear-gradient(
+    to right,
+    #4b9cd3,
+    #0077cc
+  ); /*Henter inn farger som  bytter gradvis*/
 }
 
 .bar__image {
@@ -113,7 +118,7 @@ body {
 .bar__icon {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2rem; /* putter mellomrom mellom boksene innenfor classen*/
   padding: 0.5rem;
 }
 
@@ -127,7 +132,7 @@ body {
   padding: 1rem 2rem;
   background: linear-gradient(to right, #006400, #32cd32);
   color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Legger til en svak "skygge" */
 }
 
 .navbar__liste {
@@ -137,7 +142,7 @@ body {
   padding: 0;
 }
 .navbar__liste--style {
-  list-style: none;
+  list-style: none; /*Fjerner bullet points*/
 }
 
 .navbar__liste a {
@@ -149,10 +154,20 @@ body {
 
 .bar__search--farge,
 .bar__link--farge {
-  color: white;
+  color: white; /*Gjør teksten hvit*/
+}
+.bar__link--style:hover,
+.bar__link--style:active {
+  border-bottom: 2px solid white;
+  transform: scale(1.05); /*Zoomer litt */
 }
 
-.navbar a:hover {
+.bar__search--style {
+  text-decoration: none;
+}
+
+.navbar__liste a:hover,
+.navbar__liste a:focus {
   color: #ffd700; /* Endrer farge ved hover */
 }
 
@@ -182,11 +197,9 @@ body {
   z-index: 1000;
 }
 .bar__dropdownbtn:hover,
-.bar__dropdownbtn:active,
-.bar__link--style:hover,
-.bar__link--style:active {
+.bar__dropdownbtn:active {
   border-bottom: 2px solid white;
-  transform: scale(1.05);
+  transform: scale(1.05); /*Zoomer litt */
 }
 
 .bar__dropdown-content a {
@@ -236,7 +249,7 @@ body {
 }
 
 .page__tekst {
-  text-align: center;
+  text-align: center; /*Putter teksten i midten av skjermen*/
 }
 
 /* Inputs og labels */
@@ -265,11 +278,16 @@ body {
   gap: 1rem; /* Emojiene og tittelene har en liten avstand mellom  */
 }
 .page__trekk-content {
-  /*Denne classen inneholder alt infromasjon inne */
+  /*Denne classen inneholder alt informasjon inne */
   max-height: 0;
   overflow: hidden; /*tok det med slik at hvis noe innhold kommer utenfor boksen, så skal det ikke være synlig*/
   background-color: #f9f9f9;
 }
+.page__trekk-content h1 {
+  font-size: 1.8rem;
+  background-color: lightblue;
+}
+
 .page__trekk-content p,
 .page__trekk-liste {
   font-size: 1.2rem;
@@ -304,7 +322,7 @@ body {
 .page__liste {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*Hvis det er lite plass, lag en ny linje under*/
   padding-block: 1rem;
   gap: 1rem;
   list-style-type: none;
@@ -314,6 +332,9 @@ body {
   border: 2px solid #0077cc;
   padding: 0.3rem 1rem;
   text-align: center;
+}
+.page__boks p {
+  margin-block: 0;
 }
 
 .page__boks:hover {
@@ -347,8 +368,10 @@ body {
 }
 .page__wrapper-link:hover {
   background-color: #d9ecff;
-  transform: translateY(-2px);
-  text-decoration: underline;
+  transform: translateY(
+    -2px
+  ); /*Når musa er på boksen, så skal boksen gå 2px tilbake*/
+  text-decoration: underline; /*Putter en strek under når det er hover*/
   border-radius: 8px;
 }
 .page__wrapper-link p:hover {
@@ -358,7 +381,7 @@ body {
 .page__faglig-leder-boks {
   display: flex;
   text-decoration: none;
-  padding: 1.5rem;
+  padding: 1.5rem; /*Gi mellomrom*/
   border: 2px solid #0077cc;
   border-radius: 10px;
   background-color: #eef4fb;
@@ -386,9 +409,9 @@ body {
 /* Linker til andre studier */
 .page__grid-container {
   display: grid;
-  /* https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe */
-  grid-template-columns: repeat(2, minmax(150px, 300px)); /*Lager 2 kolonner */
-  justify-content: center;
+  /*grid-template-colums er kopiert fra en nettside som er skrevet av Travis Horn (Horn, 2019). Hentet fra: https://travishorn.com/responsive-grid-in-2-minutes-with-css-grid-layout-4842a41420fe */
+  grid-template-columns: repeat(2, minmax(150px, 300px)); /*Lager 2 kolonner  */
+  justify-content: center; /*Put boksene i midten av skjermen*/
   gap: 1rem;
 }
 .page__grid-item {
@@ -468,86 +491,6 @@ body {
 }
 
 /* Slutt av hovedsiden */
-
-/* Footer */
-
-.footer {
-  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
-  color: white;
-}
-
-.footer__upper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  border-bottom: 1px solid white;
-}
-.footer__upper-link {
-  padding: 1rem;
-  background-color: #213949;
-}
-.footer__upper-link a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer__page {
-  display: flex;
-  justify-content: space-evenly;
-  margin-block-start: 1rem;
-  gap: 1rem;
-}
-
-.footer__tableLeft,
-.footer__tableMiddle,
-.footer__tableRight {
-  max-width: fit-content;
-  text-align: left;
-}
-
-.footer__tableLeft tr {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer__tableMiddle th,
-.footer__tableRight th {
-  display: flex;
-  flex-direction: column;
-  max-width: fit-content;
-}
-
-.footer__tableRight a {
-  display: flex;
-  align-items: center;
-}
-.footer__tableRight i {
-  padding-inline-end: 0.5rem;
-}
-.footer__page a {
-  text-decoration: underline;
-  color: white;
-}
-.footer__page a:hover {
-  text-decoration: underline;
-  color: #213949;
-}
-/*  Footer for acitivity page */
-.footer__activity {
-  text-align: center;
-  padding: 1rem;
-}
-.footer__activity--farge {
-  background: linear-gradient(to right, #006400, #32cd32);
-  color: #fff;
-}
-
-/* Icons  */
-.fa-brands {
-  font-size: 2rem;
-}
-/* Slutten av footer */
 
 /* Github og accesibility page styling */
 
@@ -642,6 +585,92 @@ body {
 }
 
 /* Slutt av accessibility og github */
+
+/* Footer */
+
+.footer {
+  background-image: linear-gradient(to right, #4b9cd3, #0077cc);
+  color: white;
+}
+
+.footer__upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid white;
+}
+.footer__upper-link {
+  padding: 1rem;
+  background-color: #213949;
+  transition: all 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
+}
+.footer__upper-link a {
+  text-decoration: none;
+  color: white;
+}
+.footer__upper-link:hover {
+  box-shadow: 12px 16px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  text-decoration: underline;
+}
+
+.footer__page {
+  display: flex;
+  justify-content: space-evenly; /*alt skal være justert likt horisontalt*/
+  margin-block-start: 1rem;
+  gap: 1rem;
+}
+
+.footer__tableLeft,
+.footer__tableMiddle,
+.footer__tableRight {
+  max-width: fit-content; /*Gi akkurat den størrelsen som den skal ha */
+  text-align: left;
+}
+
+.footer__tableLeft tr {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__tableMiddle th,
+.footer__tableRight th {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+}
+
+.footer__tableRight a {
+  display: flex;
+  align-items: center;
+}
+.footer__tableRight i {
+  padding-inline-end: 0.5rem;
+}
+.footer__page a {
+  text-decoration: underline;
+  color: white;
+}
+.footer__page a:hover {
+  text-decoration: underline;
+  color: #213949;
+}
+/*  Footer for acitivity page */
+.footer__activity {
+  text-align: center;
+  padding: 1rem;
+}
+.footer__activity--farge {
+  background: linear-gradient(to right, #006400, #32cd32);
+  color: #fff;
+}
+
+/* Icons  */
+.fa-brands {
+  font-size: 2rem;
+}
+/* Slutten av footer */
 
 /* Activity page */
 
