@@ -24,8 +24,13 @@ body {
 }
 /* Legger til media query skjerm bredde for de med mindre bredde (mobilbrukere) */
 @media screen and (max-width: 800px) {
+  body {
+    height: 100dvh;
+  }
+
   .bar,
-  .bar__icon {
+  .bar__icon,
+  .navbar__liste {
     flex-direction: column;
     gap: 1rem;
   }
@@ -76,10 +81,23 @@ body {
   .accesibility__image img {
     min-width: 100%;
   }
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1rem;
+  }
+
+  .gallery img {
+    width: 100% !important; /* Full bredde for bilder på mobil */
+  }
+  .navbar__liste li {
+    margin-inline-start: 1rem;
+  }
 }
 
-/* Heading */
-.bar {
+/* Heading (alt som har classen "navbar" er for activity page) */
+.bar,
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -90,6 +108,10 @@ body {
 
 .bar__image {
   width: 6rem;
+}
+
+.navbar__image {
+  width: 3.75rem;
 }
 
 .bar__icon {
@@ -105,10 +127,39 @@ body {
   text-decoration: none;
 }
 
+.navbar--style {
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #006400, #32cd32);
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__liste {
+  display: flex;
+  gap: 2rem; /* Mellomrom mellom lenker */
+  margin: 0;
+  padding: 0;
+}
+.navbar__liste--style {
+  list-style: none;
+}
+
+.navbar__liste a {
+  text-decoration: none;
+  color: #ffffffcc;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
 .bar__search--farge,
 .bar__link--farge {
   color: white;
 }
+
+.navbar a:hover {
+  color: #ffd700; /* Endrer farge ved hover */
+}
+
 /* Dropdown knapp (Alt som er om dropdown meny er hentet fra denne lenken) https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button */
 
 .bar__dropdown {
@@ -486,6 +537,15 @@ body {
   text-decoration: underline;
   color: #213949;
 }
+/*  Footer for acitivity page */
+.footer__activity {
+  text-align: center;
+  padding: 1rem;
+}
+.footer__activity--farge {
+  background: linear-gradient(to right, #006400, #32cd32);
+  color: #fff;
+}
 
 /* Icons  */
 .fa-brands {
@@ -493,42 +553,8 @@ body {
 }
 /* Slutten av footer */
 
-/* Styling */
-
-.page__heading--style {
-  font-size: 2rem;
-}
-.page__tekst--style {
-  font-size: 1.75rem;
-}
-
-.github__liste--style {
-  list-style-type: decimal;
-}
-.page__trekk-header--style {
-  font-weight: bold;
-}
-
-.page__boks--style,
-.bar__dropdownbtn--style,
-.bar__link--style,
-.bar__search--style,
-.accesibility__tekst--style,
-.github__tekst--style {
-  font-size: 1.2rem;
-}
-
-.footer__tableMiddle--style,
-.footer__tableRight--style,
-.github__tekst--style,
-.github__liste--style,
-.accesibility__tekst--style {
-  line-height: 1.5;
-}
-
 /* Github og accesibility page styling */
-.github {
-}
+
 .github__overskrift {
   background-image: linear-gradient(to right, rgb(102, 118, 120), #003366);
   color: #fff;
@@ -546,7 +572,6 @@ body {
   margin-block-end: 1rem;
 }
 .accesibility__tekst {
-  /* background-color: rgba(255, 255, 255, 0.317); */
   background-image: linear-gradient(
     to right,
     rgba(69, 105, 144, 0.9),
@@ -621,3 +646,71 @@ body {
 }
 
 /* Slutt av accessibility og github */
+
+/* Activity page */
+
+.activity {
+  padding: 1.5rem; /*  1.25rem */
+  max-width: 50rem; /*  50rem */
+  margin: auto;
+  gap: 1rem;
+}
+
+/* ---- Seksjonsstiler ---- */
+
+.activity__section h2 {
+  color: #2e7d32;
+}
+
+/* Galleri med bilder */
+.gallery {
+  display: flex;
+  gap: 0.75rem; /* 0.625rem */
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 48%; /* To bilder per rad på desktop */
+  border-radius: 0.5rem; /* 0.5rem */
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05); /* Litt zoom-effekt ved hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling */
+
+.page__heading--style {
+  font-size: 2rem;
+}
+.page__tekst--style {
+  font-size: 1.75rem;
+}
+
+.github__liste--style {
+  list-style-type: decimal;
+}
+.page__trekk-header--style {
+  font-weight: bold;
+}
+
+.page__boks--style,
+.bar__dropdownbtn--style,
+.bar__link--style,
+.bar__search--style,
+.accesibility__tekst--style,
+.github__tekst--style,
+.activity__section--style {
+  font-size: 1.2rem;
+}
+
+.footer__tableMiddle--style,
+.footer__tableRight--style,
+.github__tekst--style,
+.github__liste--style,
+.accesibility__tekst--style,
+.activity__section--style {
+  line-height: 1.5;
+}

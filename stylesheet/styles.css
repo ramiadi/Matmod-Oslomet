@@ -2,7 +2,6 @@
 
 body {
   font-family: Arial, sans-serif;
-  color: #333;
   background-color: #fff;
   line-height: 1.6;
   margin: 0;
@@ -58,19 +57,19 @@ nav a:hover {
 }
 
 /* ---- Hovedinnhold ---- */
-article {
+.activity {
   padding: 1.5rem; /*  1.25rem */
   max-width: 50rem; /*  50rem */
   margin: auto;
 }
 
 /* ---- Seksjonsstiler ---- */
-section {
+.activity section {
   margin-block-end: 1.25rem; /* 1.25rem */
 }
 
-h1,
-h2 {
+section h1,
+section h2 {
   color: #2e7d32;
 }
 
@@ -93,8 +92,8 @@ h2 {
 }
 
 /* ---- Footer ---- */
-footer {
-  background: linear-gradient(90deg, #006400, #32cd32);
+.footer {
+  background: linear-gradient(to right, #006400, #32cd32);
   color: #fff;
   text-align: center;
   padding: 0.75rem 0; /* 0.625rem */
