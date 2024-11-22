@@ -35,8 +35,8 @@ body {
     align-items: center;
   }
 
-  .page__wrapper th,
-  .page__wrapper td {
+  .page__faglig-leder-boks-header,
+  .page__faglig-leder-boks-subtitle {
     display: block;
   }
 
@@ -127,6 +127,9 @@ body {
   transition: 0.3s ease;
   text-decoration: none;
 }
+.bar__link--size {
+  font-size: 1.2rem;
+}
 
 .navbar--style {
   padding: 1rem 2rem;
@@ -165,7 +168,9 @@ body {
 .bar__search--style {
   text-decoration: none;
 }
-
+.bar__search--size {
+  font-size: 1.2rem;
+}
 .navbar__liste a:hover,
 .navbar__liste a:focus {
   color: #ffd700; /* Endrer farge ved hover */
@@ -185,6 +190,9 @@ body {
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
+}
+.bar__dropdownbtn--size {
+  font-size: 1.2rem;
 }
 
 .bar__dropdown-content {
@@ -233,25 +241,32 @@ body {
 .page__table {
   width: 100%;
 }
+.page__heading--style {
+  font-size: 2rem;
+}
 
-.page__table tr {
+.page__table-row {
   display: flex;
   flex-direction: column; /*gjør at alle tr elementer skal være under hverandre */
   border-bottom: 1px solid black;
   padding-block: 2rem 1rem; /*lager "mellomrom" fra top og bottom */
 }
 
-.page__table th,
-.page__table td {
-  line-height: 1;
-  font-size: 1.2rem;
+.page__table-header,
+.page__table-subtitle {
   text-align: left;
 }
-
+.page__table-header--style,
+.page__table-subtitle--style {
+  line-height: 1;
+  font-size: 1.2rem;
+}
 .page__tekst {
   text-align: center; /*Putter teksten i midten av skjermen*/
 }
-
+.page__tekst--size {
+  font-size: 1.75rem;
+}
 /* Inputs og labels */
 
 .page__trekk {
@@ -269,26 +284,47 @@ body {
 
 .page__trekk-header {
   /* denne classen er for labels*/
-  background-image: linear-gradient(to left, #4b9cd3, #0077cc);
-  color: white;
   padding: 1rem; /* Lager mellomrom slik at boksen blir større */
   cursor: pointer; /*gjør sånn at brukere skal forstå lettere at man skal trykke på listene */
   display: flex;
   align-items: center; /*har brukt flex og align items center slik at jeg får teksten også i midten */
   gap: 1rem; /* Emojiene og tittelene har en liten avstand mellom  */
 }
+
+.page__trekk-header--farge {
+  background-image: linear-gradient(to left, #4b9cd3, #0077cc);
+  color: white;
+}
+.page__trekk-header--bold {
+  font-weight: bold;
+}
+.page__trekk-header::before {
+  /*Denne classen med before, vil jeg at det skal også komme før tittelen*/
+  content: "↪";
+  font-size: 1.5rem;
+  transform: rotate(0);
+}
+.page__trekk-item input[type="checkbox"]:checked + .page__trekk-header::before {
+  transform: rotate(-180deg); /*Roter helt motsatt retning når du har trukket*/
+}
+
 .page__trekk-content {
   /*Denne classen inneholder alt informasjon inne */
   max-height: 0;
   overflow: hidden; /*tok det med slik at hvis noe innhold kommer utenfor boksen, så skal det ikke være synlig*/
+}
+.page__trekk-content--farge {
   background-color: #f9f9f9;
 }
 .page__trekk-content h1 {
   font-size: 1.8rem;
   background-color: lightblue;
 }
+.page__trekk-content p {
+  font-size: 1.2rem;
+  list-style-type: decimal;
+}
 
-.page__trekk-content p,
 .page__trekk-liste {
   font-size: 1.2rem;
 }
@@ -304,16 +340,6 @@ body {
   padding: 1rem;
 }
 
-.page__trekk-header::before {
-  /*Denne classen med before, vil jeg at det skal også komme før tittelen*/
-  content: "↪";
-  font-size: 1.5rem;
-  transform: rotate(0);
-}
-.page__trekk-item input[type="checkbox"]:checked + .page__trekk-header::before {
-  transform: rotate(-180deg); /*Roter helt motsatt retning når du har trukket*/
-}
-
 .page__elementer {
   display: flex;
   justify-content: flex-start;
@@ -325,13 +351,18 @@ body {
   flex-wrap: wrap; /*Hvis det er lite plass, lag en ny linje under*/
   padding-block: 1rem;
   gap: 1rem;
+}
+.page__liste--style {
+  font-size: 1.2rem;
   list-style-type: none;
 }
 .page__boks {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid #0077cc;
   padding: 0.3rem 1rem;
   text-align: center;
+}
+.page__boks--border {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #0077cc;
 }
 .page__boks p {
   margin-block: 0;
@@ -356,47 +387,52 @@ body {
   color: #0077cc;
   display: inline-block;
 }
-.page__wrapper-link p {
+.page__wrapper-text {
   font-size: 1.2rem;
-  color: #0056b3;
   margin: 0;
   padding: 1rem;
-  background-color: #eaf3ff;
-  border: 2px solid #0077cc;
   border-radius: 8px;
   transition: background-color 0.3s, transform 0.2s;
 }
+.page__wrapper-text--size {
+  font-size: 1.2rem;
+}
+.page__wrapper-text--farge {
+  color: #0056b3;
+  background-color: #eaf3ff;
+  border: 2px solid #0077cc;
+}
+
 .page__wrapper-link:hover {
-  background-color: #d9ecff;
   transform: translateY(
     -2px
   ); /*Når musa er på boksen, så skal boksen gå 2px tilbake*/
   text-decoration: underline; /*Putter en strek under når det er hover*/
   border-radius: 8px;
 }
-.page__wrapper-link p:hover {
-  color: #0056b3;
-}
 
 .page__faglig-leder-boks {
   display: flex;
   text-decoration: none;
   padding: 1.5rem; /*Gi mellomrom*/
-  border: 2px solid #0077cc;
   border-radius: 10px;
-  background-color: #eef4fb;
 }
+.page__faglig-leder-boks--farge {
+  background-color: #eef4fb;
+  border: 2px solid #0077cc;
+}
+
 .page__faglig-leder-boks:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   background-color: #d9ecff;
 }
 
-.page__wrapper th,
-.page__wrapper td {
+.page__faglig-leder-boks-header,
+.page__faglig-leder-boks-subtitle {
   padding: 0.5rem;
   border-bottom: 1px solid #ddd;
 }
-.page__wrapper th {
+.page__faglig-leder-boks-header {
   text-align: left;
   color: #0056b3;
 }
@@ -707,24 +743,10 @@ body {
 
 /* Styling */
 
-.page__heading--style {
-  font-size: 2rem;
-}
-.page__tekst--style {
-  font-size: 1.75rem;
-}
-
 .github__liste--style {
   list-style-type: decimal;
 }
-.page__trekk-header--style {
-  font-weight: bold;
-}
 
-.page__boks--style,
-.bar__dropdownbtn--style,
-.bar__link--style,
-.bar__search--style,
 .accesibility__tekst--style,
 .github__tekst--style,
 .activity__section--style {

@@ -17,7 +17,7 @@
 
 <body>
     <header class="bar bar--farge">
-        <div class="bar__icon bar__icon--style">
+        <div class="bar__icon">
             <!-- Bildet er fra Velferdsforskningsinstituttet NOVA ved OsloMet
              – storbyuniversitetet (NOVA, 2024). Hentet fra https://x.com/NOVAnytt -->
             <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo-fjernet-bakgrunn.png" alt="Oslomet-logo"
@@ -26,7 +26,7 @@
             <!-- Alt i innholdet Diven "bar__meny" er hentet fra W3Schools (W3Schools, 2024). Hentet fra https://www.w3schools.com/css/tryit.asp?filename=trycss_dropdown_button -->
             <div class="bar__meny">
                 <div class="bar__dropdown">
-                    <button class="bar__dropdownbtn bar__dropdownbtn--style">Meny ☰</button>
+                    <button class="bar__dropdownbtn bar__dropdownbtn--size">Meny ☰</button>
                     <div class="bar__dropdown-content">
                         <a href="https://www.oslomet.no/studier">Studier</a>
                         <a href="https://www.oslomet.no/forskning">Forskningen vår</a>
@@ -40,7 +40,7 @@
             </div>
             <div class="bar__meny">
                 <div class="bar__dropdown">
-                    <button class="bar__dropdownbtn bar__dropdownbtn--style">Pages ▼</button>
+                    <button class="bar__dropdownbtn bar__dropdownbtn--size">Pages ▼</button>
                     <div class="bar__dropdown-content">
                         <a href="HTMLAccesibility.HTML">Tilgjengelighet</a>
                         <a href="Activity.html">Aktivitet</a>
@@ -49,9 +49,9 @@
                 </div>
             </div>
             <a href="https://www.oslomet.no/studier/studieoversikt"
-                class="bar__link bar__link--farge bar__link--style">Studieoversikt</a>
+                class="bar__link bar__link--farge bar__link--style bar__link--size">Studieoversikt</a>
         </div>
-        <a href="#" class="bar__search bar__search--farge bar__search--style">Søk 🔍</a>
+        <a href="#" class="bar__search bar__search--farge bar__search--style bar__search--size">Søk 🔍</a>
     </header>
 
 
@@ -66,46 +66,46 @@
 
             <!-- Tabellen er tatt fra w3schools (W3Schools). Hentet fra:https://www.w3schools.com/html/html_tables.asp  -->
             <table class="page__table">
-                <tr>
-                    <th>Studiested</th>
-                    <td>Pilestredet i Oslo</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Studiested</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">Pilestredet i Oslo</td>
                 </tr>
 
-                <tr>
-                    <th>Varighet</th>
-                    <td>3 år</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Varighet</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">3 år</td>
                 </tr>
 
-                <tr>
-                    <th>Omfang</th>
-                    <td>Heltid</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Omfang</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">Heltid</td>
                 </tr>
 
-                <tr>
-                    <th>Studiepoeng</th>
-                    <td>180</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Studiepoeng</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">180</td>
                 </tr>
 
-                <tr>
-                    <th>Studiestart</th>
-                    <td>August</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Studiestart</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">August</td>
                 </tr>
 
-                <tr>
-                    <th>Undervisningsspråk</th>
-                    <td>Norsk</td>
-                    <td>Engelsk</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Undervisningsspråk</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">Norsk</td>
+                    <td class="page__table-subtitle page__table-subtitle--style">Engelsk</td>
                 </tr>
 
-                <tr>
-                    <th>Studieplasser</th>
-                    <td>40</td>
+                <tr class="page__table-row">
+                    <th class="page__table-header page__table-header--style">Studieplasser</th>
+                    <td class="page__table-subtitle page__table-subtitle--style">40</td>
                 </tr>
             </table>
         </section>
 
         <section>
-            <p class="page__tekst page__tekst--style">
+            <p class="page__tekst page__tekst--size">
                 Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige
                 oppgaver.
             </p>
@@ -114,10 +114,11 @@
 
             <div class="page__trekk-item">
                 <input type="checkbox" id="item1" role="button">
-                <label class="page__trekk-header page__trekk-header--style" for="item1">Opptakskrav og poeng</label>
-                <div class="page__trekk-content">
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge"
+                    for="item1">Opptakskrav og poeng</label>
+                <div class="page__trekk-content page__trekk-content--farge">
                     <p>For å søke på dette programmet må du ha </p>
-                    <ul class="page__trekk-liste" style="list-style-type:decimal;">
+                    <ul class="page__trekk-liste">
                         <li><a href="https://www.samordnaopptak.no/info/opptak/opptak-uhg/"><b>generell
                                     studiekompetanse
                                     (samordnaopptak.no)</b></a> eller <a
@@ -139,8 +140,9 @@
             </div>
             <div class="page__trekk-item">
                 <input type="checkbox" id="item2">
-                <label class="page__trekk-header page__trekk-header--style" for="item2">Slik søker du</label>
-                <div class="page__trekk-content">
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge" for="item2">Slik
+                    søker du</label>
+                <div class="page__trekk-content page__trekk-content--farge">
                     <p>Du søker på Samordna opptak med studiekode 215 503.</p>
                     <ul class="page__trekk-liste">
                         <li>15. april: ordinær søknadsfrist</li>
@@ -154,8 +156,9 @@
             </div>
             <div class="page__trekk-item">
                 <input type="checkbox" id="item3">
-                <label class="page__trekk-header page__trekk-header--style" for="item3">Hva lærer du?</label>
-                <div class="page__trekk-content">
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge" for="item3">Hva
+                    lærer du?</label>
+                <div class="page__trekk-content page__trekk-content--farge">
                     <p>Bachelor i matematisk modellering og datavitenskap kobler sammen matematikk, informatikk,
                         fysikk
                         og statistikk. </p>
@@ -172,9 +175,10 @@
                     <ul class="page__trekk-liste" style="list-style-type: none;">
                         <li>
                             <input type="checkbox" id="item4">
-                            <label class="page__trekk-header page__trekk-header--style" for="item4">Statiske og
+                            <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge"
+                                for="item4">Statiske og
                                 datadrevne metoder</label>
-                            <div class="page__trekk-content">
+                            <div class="page__trekk-content page__trekk-content--farge">
                                 <p>Du lærer om hvordan du kan bruke målte data koblet med datadrevne og statistiske
                                     metoder til å gjøre beregninger, for eksempel av fremtidige strømpriser.</p>
                                 <p>Du lærer hvordan du kan løse komplekse og sammensatte problemer, og utforske
@@ -185,9 +189,10 @@
                         </li>
                         <li>
                             <input type="checkbox" id="item5">
-                            <label class="page__trekk-header page__trekk-header--style" for="item5">Vitenskapelige
+                            <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge"
+                                for="item5">Vitenskapelige
                                 beregninger</label>
-                            <div class="page__trekk-content">
+                            <div class="page__trekk-content page__trekk-content--farge">
                                 <p>Du lærer å lage effektive algoritmer, datastrukturer og kildekoder for å løse
                                     matematiske og fysiske problemer med numeriske metoder.</p>
                                 <p>Du lærer å utvikle kildekode og metodikk knyttet til medisinsk teknologi,
@@ -197,9 +202,10 @@
                         </li>
                         <li>
                             <input type="checkbox" id="item6">
-                            <label class="page__trekk-header page__trekk-header--style" for="item6">Matematikk og
+                            <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge"
+                                for="item6">Matematikk og
                                 fysikk</label>
-                            <div class="page__trekk-content">
+                            <div class="page__trekk-content page__trekk-content--farge">
                                 <p>Du utforsker algebraiske strukturer, blant annet knyttet til dyp læring og
                                     kunstig
                                     intelligens.</p>
@@ -219,35 +225,36 @@
             </div>
             <div class="page__trekk-item">
                 <input type="checkbox" id="item7">
-                <label class="page__trekk-header page__trekk-header--style" for="item7">Studiets oppbygging</label>
-                <div class="page__trekk-content">
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge"
+                    for="item7">Studiets oppbygging</label>
+                <div class="page__trekk-content page__trekk-content--farge">
                     <h1>1. studieår</h1>
                     <section class="page__elementer">
 
                         <h2>1. semester</h2>
 
-                        <ul class="page__liste">
+                        <ul class="page__liste page__liste--style">
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1300/2024/H%C3%98ST">Diskret
                                     matematikk</a>
                                 <p>DAPE1300</p>
                             </li>
 
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a
                                     href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE1400/2024/H%C3%98ST">Programmering</a>
                                 <p style="margin-block:0;">DAPE1400</p>
 
                             </li>
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1100/2024/H%C3%98ST">Teknologi
                                     og samfunn for programmerere</a>
                                 <p>DAPE1100</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO1100/2024/H%C3%98ST">Innføring
                                     i modeller og beregninger</a>
                                 <p>MAMO110</p>
@@ -259,22 +266,22 @@
 
                         <h2>2. semester</h2>
 
-                        <ul class="page__liste">
+                        <ul class="page__liste page__liste--style">
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAFE1000/2024/H%C3%98ST">Matematikk
                                     1000
                                 </a>
                                 <p>DAFE1000</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2101/2024/H%C3%98ST">Fysikk
                                     og kjemi</a>
                                 <p style="margin-block:0;">DAPE2101</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA1500/2024/H%C3%98ST">Databaser
                                 </a>
                                 <p>DATA1500</p>
@@ -291,16 +298,16 @@
 
                         <h2>3. semester</h2>
 
-                        <ul class="page__liste">
+                        <ul class="page__liste page__liste--style">
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAPE2000/2024/H%C3%98ST">Matematikk
                                     2000 med statistikk</a>
                                 <p>DAPE2000</p>
                             </li>
 
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2100/2024/H%C3%98ST">Moderne
                                     fysikk</a>
                                 <p style="margin-block:0;">MAMO2100</p>
@@ -312,8 +319,8 @@
 
                         <h2>4. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3705/2024/H%C3%98ST">Matematikk
                                     4000</a>
                                 <p>DAVE3705</p>
@@ -327,8 +334,8 @@
 
                         <h2>3. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær
                                     algebra og introduksjon til gruppeteori</a>
                                 <p>MAMO2300</p>
@@ -341,14 +348,14 @@
                         <h2>4.semester</h2>
 
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2400/2024/H%C3%98ST">Termodynamikk
                                     og statistisk fysikk</a>
                                 <p>MAMO2400</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier
                                     og algebraiske strukturer</a>
                                 <p>MAMO2500</p>
@@ -363,8 +370,8 @@
 
                         <h2>3. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer
                                     og datastrukturer</a>
                                 <p>DATS2300</p>
@@ -376,22 +383,22 @@
 
                         <h2>4. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3100/2024/H%C3%98ST">Statistisk
                                     analyse</a>
                                 <p>MAMO3100</p>
                             </li>
 
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a
                                     href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a>
                                 <p>ADSE3200</p>
                             </li>
 
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert
                                     modellering og beregninger</a>
                                 <p>MAMO2200</p>
@@ -406,8 +413,8 @@
 
                         <h2>3. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATS2300/2024/H%C3%98ST">Algoritmer
                                     og datastrukturer</a>
                                 <p>DATS2300</p>
@@ -419,14 +426,14 @@
 
                         <h2>4. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive
                                     programmer</a>
                                 <p>DAVE3606</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert
                                     modellering og beregninger</a>
                                 <p>MAMO2200</p>
@@ -439,8 +446,8 @@
 
                         <h2>5. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3700/2024/H%C3%98ST">Matematikk
                                     3000</a>
                                 <p>DAVE3700</p>
@@ -452,8 +459,8 @@
 
                         <h2>6. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="">Bacheloroppgave</a>
                                 <p>DATA3900</p>
                             </li>
@@ -466,33 +473,33 @@
                     <section class="page__elementer">
                         <h2>5. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell
                                     analyse</a>
                                 <p>MAMO3300</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon
                                     til IT-forskning</a>
                                 <p>DATA3730</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3800/2024/H%C3%98ST">Introduction
                                     to Data Science with Scripting</a>
                                 <p>DATA3800</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a
                                     href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a>
 
                                 <p>ITPE3100</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering
                                     og Visualisering</a>
                                 <p>MAMO3200</p>
@@ -504,26 +511,26 @@
 
                         <h2>6. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing
                                     av programvare</a>
                                 <p>ADTS2310</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk
                                     og skytjenester</a>
                                 <p>DATA2410</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive
                                     programmer</a>
                                 <p>DAVE3606</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2200/2024/H%C3%98ST">Avansert
                                     modellering og beregninger</a>
                                 <p>MAMO2200</p>
@@ -537,33 +544,33 @@
                     <section class="page__elementer">
                         <h2>5. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3625/2024/H%C3%98ST">Introduksjon
                                     til Kunstig Intelligens</a>
                                 <p>DAVE3625</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon
                                     til IT-forskning</a>
                                 <p>DAVE3730</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3750/2024/H%C3%98ST">Anvendt
                                     kunstig intelligens og data science prosjekt</a>
                                 <p>DAVE3750</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a
                                     href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a>
 
                                 <p>ITPE3100</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering
                                     og visualisering</a>
                                 <p>MAMO3200</p>
@@ -574,20 +581,20 @@
                     <section class="page__elementer">
                         <h2>6. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing
                                     av programvare</a>
                                 <p>ADTS2310</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk
                                     og skytjenester</a>
                                 <p>DATA2410</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DAVE3606/2024/H%C3%98ST">Ressurseffektive
                                     programmer
                                 </a>
@@ -604,31 +611,31 @@
                     <section class="page__elementer">
                         <h2>5. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3200/2024/H%C3%98ST">Simulering
                                     og visualisering</a>
                                 <p>MAMO3200</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA3730/2024/H%C3%98ST">Introduksjon
                                     til IT-forskning</a>
                                 <p>DATA3730</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a
                                     href="https://student.oslomet.no/studier/-/studieinfo/emne/ITPE3100/2024/H%C3%98ST">Datasikkerhet</a>
                                 <p>ITPE3100</p>
                             </li>
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2300/2024/H%C3%98ST">Lineær
                                     algebra og introduksjon til gruppeteori</a>
                                 <p>MAMO2300</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO3300/2024/H%C3%98ST">Reell
                                     analyse</a>
                                 <p>MAMO3300</p>
@@ -640,26 +647,26 @@
                     <section class="page__elementer">
                         <h2>6. semester</h2>
 
-                        <ul class="page__liste">
-                            <li class="page__boks page__boks--style">
+                        <ul class="page__liste page__liste--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a
                                     href="https://student.oslomet.no/studier/-/studieinfo/emne/ADSE3200/2024/H%C3%98ST">Visualisering</a>
                                 <p>ADSE3200</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/ADTS2310/2024/H%C3%98ST">Testing
                                     av programvare</a>
                                 <p>ADTS2310</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/DATA2410/2024/H%C3%98ST">Datanettverk
                                     og skytjenester</a>
                                 <p>DATA2410</p>
                             </li>
 
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://student.oslomet.no/studier/-/studieinfo/emne/MAMO2500/2024/H%C3%98ST">Symmetrier
                                     og algebraiske strukturer</a>
                                 <p>MAMO2500</p>
@@ -672,10 +679,10 @@
 
             <div class="page__trekk-item">
                 <input type="checkbox" id="item8">
-                <label class="page__trekk-header page__trekk-header--style" for="item8">Hvordan
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge" for="item8">Hvordan
                     foregår
                     undervisningen?</label>
-                <div class="page__trekk-content">
+                <div class="page__trekk-content page__trekk-content--farge">
                     <p>Undervisningen er en kombinasjon av</p>
                     <ul class="page__trekk-liste">
                         <li>prosjektarbeid</li>
@@ -698,9 +705,9 @@
 
             <div class="page__trekk-item">
                 <input type="checkbox" id="item9">
-                <label class="page__trekk-header page__trekk-header--style" for="item9">Hva
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge" for="item9">Hva
                     koster det?</label>
-                <div class="page__trekk-content">
+                <div class="page__trekk-content page__trekk-content--farge">
                     <a href="https://student.oslomet.no/semesteravgift">
                         <p>
                             <b> Du betaler en semesteravgift
@@ -723,9 +730,9 @@
 
             <div class="page__trekk-item">
                 <input type="checkbox" id="item10">
-                <label class="page__trekk-header page__trekk-header--style" for="item10">Hva
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge" for="item10">Hva
                     kan du jobbe som?</label>
-                <div class="page__trekk-content">
+                <div class="page__trekk-content page__trekk-content--farge">
                     <p>Med dette studiet får du IT-kompetanse
                         som er etterspurt i arbeidslivet, særlig
                         om du velger
@@ -751,22 +758,23 @@
 
             <div class="page__trekk-item">
                 <input type="checkbox" id="item11">
-                <label class="page__trekk-header page__trekk-header--style" for="item11">Utveksling</label>
-                <div class="page__trekk-content">
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge"
+                    for="item11">Utveksling</label>
+                <div class="page__trekk-content page__trekk-content--farge">
                     <p>Du kan dra på utveksling i femte
                         semester.</p>
                 </div>
             </div>
             <div class="page__trekk-item">
                 <input type="checkbox" id="item12">
-                <label class="page__trekk-header page__trekk-header--style" for="item12">Videre
+                <label class="page__trekk-header page__trekk-header--bold page__trekk-header--farge" for="item12">Videre
                     studiemuligheter ved
                     OsloMet</label>
-                <div class="page__trekk-content">
+                <div class="page__trekk-content page__trekk-content--farge">
 
                     <section class="page__elementer">
                         <ul class="page__trekk-liste" style="list-style-type: none;">
-                            <li class="page__boks page__boks--style">
+                            <li class="page__boks page__boks--border page__boks--size">
                                 <a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">
                                     Anvendt data- og
                                     informasjonsteknologi
@@ -786,37 +794,40 @@
 
             <h2>Studiested</h2>
             <a class="page__wrapper-link" href="https://www.oslomet.no/om/studiested-pilestredet">
-                <p>Studiested Pilestredet</p>
+                <p class="page__wrapper-text page__wrapper-text--size page__wrapper-text--farge">Studiested Pilestredet
+                </p>
             </a>
 
             <h2>Spørsmål om utdanningen?</h2>
             <a class="page__wrapper-link" href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">
-                <p>Har du spørsmål om utdanningen, kontakt
+                <p class="page__wrapper-text page__wrapper-text--size page__wrapper-text--farge">Har du spørsmål om
+                    utdanningen, kontakt
                     oss gjennom vårt kontaktskjema.</p>
             </a>
 
             <h2>Faglig leder</h2>
-            <a href="https://www.oslomet.no/om/ansatt/krhel3944/" class="page__faglig-leder-boks">
+            <a href="https://www.oslomet.no/om/ansatt/krhel3944/"
+                class="page__faglig-leder-boks page__faglig-leder-boks--farge">
                 <table>
                     <tr>
                         <td rowspan="4" class="profile-image">
                             <!-- Dette bildet er hentet fra OsloMet sin nettside (OsloMet, 2024). Hnetet fra https://www.oslomet.no/om/ansatt/krhel3944/ -->
                             <img src="image/faglig-leder.jpg" alt="Kristoffer Herland Hellton">
                         </td>
-                        <th>Navn</th>
-                        <td>Kristoffer Herland Hellton</td>
+                        <th class="page__faglig-leder-boks-header">Navn</th>
+                        <td class="page__faglig-leder-boks-subtitle">Kristoffer Herland Hellton</td>
                     </tr>
                     <tr>
-                        <th>Stilling</th>
-                        <td>Førsteamanuensis</td>
+                        <th class="page__faglig-leder-boks-header">Stilling</th>
+                        <td class="page__faglig-leder-boks-subtitle">Førsteamanuensis</td>
                     </tr>
                     <tr>
-                        <th>Telefon</th>
-                        <td>+47 672 37 240</td>
+                        <th class="page__faglig-leder-boks-header">Telefon</th>
+                        <td class="page__faglig-leder-boks-subtitle">+47 672 37 240</td>
                     </tr>
                     <tr>
-                        <th>E-post</th>
-                        <td>kristoffer.hellton@oslomet.no
+                        <th class="page__faglig-leder-boks-header">E-post</th>
+                        <td class="page__faglig-leder-boks-subtitle">kristoffer.hellton@oslomet.no
                         </td>
                     </tr>
                 </table>
