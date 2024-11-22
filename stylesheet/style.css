@@ -695,6 +695,7 @@ body {
   text-decoration: underline;
   color: white;
 }
+/* Focus er for tastaturbrukere */
 .footer__page a:hover,
 .footer__page a:focus {
   text-decoration: underline;
