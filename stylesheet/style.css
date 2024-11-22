@@ -193,7 +193,7 @@ body {
 }
 
 .bar__dropdown-content {
-  display: none;
+  display: none; /*Viser ikke content*/
   position: absolute;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
   border: 1px solid grey;
@@ -221,7 +221,7 @@ body {
 
 .bar__dropdown:focus-within .bar__dropdown-content,
 .bar__dropdown:active .bar__dropdown-content {
-  display: block;
+  display: block; /*siden content var none så viser den fra nå*/
 }
 
 .bar__link:hover {
@@ -374,7 +374,7 @@ body {
 
 .page__wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*boksene skal gå under hverandre*/
   align-items: center;
   border-radius: 10px;
 }
@@ -450,7 +450,7 @@ body {
 .page__grid-item {
   display: block;
   text-decoration: none;
-  text-align: center;
+  text-align: center; /*Teksten skal være i midten av boksen*/
   border: 2px solid #4b9cd3;
   border-radius: 10px;
   padding: 1rem;
@@ -459,7 +459,7 @@ body {
   transition: transform 0.3s ease;
 }
 .page__grid-item:hover {
-  transform: translate(-3px);
+  transform: translate(-3px); /*går litt tilbake*/
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   background-color: #e6f7ff;
 }
@@ -482,11 +482,14 @@ body {
 
 .page__studenthistorie {
   display: flex;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94); /*BOksen skal gå utover*/
+}
+.page__studenthistorie--farge {
   background-image: linear-gradient(to right, #4b9cd3, #0077cc);
   box-shadow: 10px 14px 18px rgba(0, 0, 0, 0.1);
-  text-decoration: none;
-  transition: all 0.3s cubic-bezier(0.24, 0.59, 0.38, 0.94);
 }
+
 .page__studenthistorie:hover,
 .page__studenthistorie-boks a:hover {
   box-shadow: 12px 16px 20px rgba(0, 0, 0, 0.3);
