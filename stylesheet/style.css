@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Legger til media query skjerm bredde for de med mindre bredde (mobilbrukere) */
@@ -548,6 +549,8 @@ body {
     rgba(69, 105, 144, 0.9),
     rgba(41, 50, 60, 0.9)
   );
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
 .github__image,
@@ -610,7 +613,7 @@ body {
 }
 
 .page__aboutproject {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(141, 137, 137, 0.8);
   border-radius: 8px;
   margin: 2rem auto;
   padding: 2rem;
