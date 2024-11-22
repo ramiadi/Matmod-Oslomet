@@ -561,7 +561,7 @@ body {
   display: flex;
   gap: 1rem;
   margin-block-start: 1rem;
-  overflow-x: auto;
+  overflow-x: auto; /*Ha alltid en skroller*/
 }
 
 .github__image img,
@@ -573,7 +573,7 @@ body {
 }
 .github__image img:hover,
 .accesibility__image img:hover {
-  transform: scale(1.01);
+  transform: scale(1.01); /*Zoom litt ut*/
 }
 .head__img {
   display: grid;
@@ -695,7 +695,8 @@ body {
   text-decoration: underline;
   color: white;
 }
-.footer__page a:hover {
+.footer__page a:hover,
+.footer__page a:focus {
   text-decoration: underline;
   color: #213949;
 }
