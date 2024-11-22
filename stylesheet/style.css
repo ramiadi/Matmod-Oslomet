@@ -662,6 +662,10 @@ body {
   text-align: left;
 }
 
+.footer__image {
+  width: 5rem;
+}
+
 .footer__tableLeft tr {
   display: flex;
   flex-direction: column;
