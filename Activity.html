@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Aktivitet - Fotturer</title>
-    <link rel="stylesheet" href="stylesheet/styles.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
     <!-- Kobler til det eksterne CSS-stilarket for hele nettstedet -->
 </head>
 
 <body>
+
     <!-- Header med navigasjonsmeny. Kobler til andre sider som f.eks. "index.html" og "github.html" -->
     <header>
-        <nav>
-            <img src="image/Oslomet3.png" alt="" style="width: 5rem;">
-            <ul>
-
+        <nav class="navbar navbar--style">
+            <!-- Dette bildet er hentet fra nettsiden Pinterest og er laget av en bruker (Avennon, 2024). Hentet fra: https://www.pinterest.com/pin/bird-flower-leaf-animal-logo-design-nature-symbol-black-and-white-curved-fluid-hand--533887730820443196/ -->
+            <img src="image/images-Activity-page/file.png" alt="Bildet av logo" class="navbar__image">
+            <ul class="navbar__liste navbar__liste--style">
                 <li><a href="index.html">Hjem</a></li>
-                <li><a href="accessibility.html">Tilgjengelighet</a></li>
-                <li><a href="github.html">GitHub</a></li>
-                <li><a href="activity.html">Aktivitet</a></li>
+                <li><a href="HTMLAccesibility.HTML">Tilgjengelighet</a></li>
+                <li><a href="github-page.html">GitHub</a></li>
+                <li><a href="Activity.html">Aktivitet</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Hovedinnholdet på siden for "Aktivitet" -->
-    <main>
+    <article class="activity">
         <!-- Seksjon: Introduksjon til fotturer som aktivitet -->
-        <section>
-            <h1>Fotturer i Norge</h1>
+        <section class="activity__section activity__section--style">
+            <h2>Fotturer i Norge</h2>
             <p>Opplev Norges vakre natur gjennom fotturer! Fotturer gir både mosjon og fantastiske naturopplevelser. Her
                 finner du noen gode ressurser for å komme i gang.</p>
             <p>Utforsk mer på
@@ -39,23 +40,24 @@
         </section>
 
         <!-- Seksjon: Galleri med bilder relatert til fotturer -->
-        <section>
+        <section class="activity__section activity__section--style">
             <h2>Galleri</h2><!--Bildene er kopiert fra UT.NO-->
 
             <div class="gallery">
-                <img src="image/fjelltur1.jpg" alt="Sti i fjellet">
-                <!--https://ut.no/turforslag/1112192112/liin  Bilde 1-->
-                <img src="image/fjelltur2.jpg" alt="Utsikt over innsjø">
-                <!--https://ut.no/turforslag/1112192260/bomknotten-utsiktspunkt-vennesla Bilde 2-->
-                <img src="image/fjelltur3.jpg" alt="Solnedgang i skogen">
-                <!--https://ut.no/turforslag/1112192260/bomknotten-utsiktspunkt-vennesla Bilde 3-->
-                <img src="image/fjelltur4.jpg" alt="Fottur i skogen med en hund">
-                <!--https://ut.no/turforslag/1112192260/bomknotten-utsiktspunkt-vennesla Bilde 4-->
+                <img src="image/images-Activity-page/fjelltur1.jpg" alt="Sti i fjellet">
+                <!-- Dette bildet er hentet fra ut.no og er fotografert av Lars Erik Sira (Sira, 2024). Hentet fra 
+                 https://ut.no/turforslag/1112192112/liin  Bilde 1-->
+
+                <!-- Disse tre bildene er hentet fra ut.no og er fotografert av Vennesla turstigruppe (Vennesla turstigruppe, 2024). 
+                  Hentet fra: https://ut.no/turforslag/1112192260/bomknotten-utsiktspunkt-vennesla Bilde 2, bilde 3 og bilde 4. -->
+                <img src="image/images-Activity-page/fjelltur2.jpg" alt="Utsikt over innsjø">
+                <img src="image/images-Activity-page/fjelltur3.jpg" alt="Solnedgang i skogen">
+                <img src="image/images-Activity-page/fjelltur4.jpg" alt="Fottur i skogen med en hund">
             </div>
         </section>
 
         <!-- Seksjon: Beskrivelse av fordelene ved fotturer -->
-        <section>
+        <section class="activity__section activity__section--style">
             <h2>Fordeler ved fotturer</h2>
             <p>Fotturer styrker både kropp og sinn, og gir deg mental ro og fysisk trening. Å være ute i naturen har
                 mange positive helseeffekter.</p>
@@ -67,7 +69,7 @@
         </section>
 
         <!-- Seksjon: Sikkerhet og forberedelser før fotturer -->
-        <section>
+        <section class="activity__section activity__section--style">
             <h2>Sikkerhet på tur</h2>
             <p>Det er viktig å være forberedt før du legger ut på en fottur. Sørg for å ha med deg nødvendig utstyr og
                 sjekk værmeldingen før du drar.</p>
@@ -76,10 +78,10 @@
                     target="_blank">National Geographic</a> og
                 <a href="https://www.backpacker.com/skills/how-to-hike-smart/" target="_blank">Backpacker</a>.
             </p>
-        </section>
+        </section class="activity__section activity__section--style">
 
         <!-- Seksjon: Eksterne lenker for flere ressurser om fotturer -->
-        <section>
+        <section class="activity__section activity__section--style ">
             <h2>Nyttige ressurser</h2>
             <ul>
                 <li><a href="https://www.norskfriluftsliv.no/" target="_blank">Norsk Friluftsliv</a> for informasjon om
@@ -92,10 +94,10 @@
                 </li>
             </ul>
         </section>
-    </main>
+    </article>
 
     <!-- Footer som vises nederst på siden -->
-    <footer>
+    <footer class="footer__activity footer__activity--farge">
         <p>&copy; 2024 Min Aktivitet</p>
     </footer>
 </body>

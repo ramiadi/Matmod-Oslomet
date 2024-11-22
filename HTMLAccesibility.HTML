@@ -1,54 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheet/stylesss.css">
+    <link rel="stylesheet" href="stylesheet/style.css">
 </head>
+
 <body>
-    <header class="bar">
+    <header class="bar bar--farge">
+        <div class="bar__icon">
+            <!-- Logo -->
+            <!-- Bildet er fra Velferdsforskningsinstituttet NOVA ved OsloMet
+             – storbyuniversitetet (NOVA, 2024). Hentet fra https://x.com/NOVAnytt -->
+            <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo-fjernet-bakgrunn.png" alt="Oslomet-logo"
+                    class="bar__image">
+            </a>
 
-        <div class="bar__left">
-            <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo.png" alt="Oslomet-logo"
-                    class="bar__image"></a>
-            <a href="#" class="left__studie left__studie--style">Studieoversikt</a>
-        </div>
-        <div class="bar__icon bar__icon--style">
-            <div class="icon__search">
-                <a href="#" style="text-decoration: none;">Søk 🔍</a>
-            </div>
-            <div class="icon__meny">
-                <a href="#" style="text-decoration: none;">Meny ☰</a>
-            </div>
+            <a href="index.html" class="bar__link bar__link--farge bar__link--style bar__link--size">Hjemmeside</a>
+            <a href="Activity.html" class="bar__link bar__link--farge bar__link--style bar__link--size">Activity</a>
+            <a href="github-page.html" class="bar__link bar__link--farge bar__link--style bar__link--size">GitHub</a>
 
         </div>
+
+        <!-- Søk -->
+        <a href="#" class="bar__search bar__search--farge bar__search--style bar__search--size">Søk 🔍</a>
 
     </header>
 
-    <main>   
-        <div class="top__page">   
-            <h1 class="main__title"style="font-weight: 100; text-align: justify; font-family: Arial, Helvetica, sans-serif;">
-            <strong> Accessibility page </strong> - våre tanker og avgjørelser</h1>
+
+    <main>
+        <div class="top__page">
+            <h1 class="main__title">
+                <strong>Accessibility page </strong> - våre tanker og avgjørelser
+            </h1>
 
             <div class="head__img">
-                <img src="image/HTML5.png" alt="HTML5 logo">
-                <img src="image/css3.png" alt="CSS3 logo">   
-                <img class="twoboxes" src="image/Doctype__img.png" alt="bilde av koding">        
+                <img src="image/images-Accesibility-page/HTML5.png" alt="HTML5 logo">
+                <img src="image/images-Accesibility-page/css3.png" alt="CSS3 logo">
+                <img class="twoboxes" src="image/images-Accesibility-page/Doctype__img.png" alt="bilde av koding">
             </div>
 
-            <h2 class="page__aboutproject" style="text-align: center; font-family: Arial, Helvetica, sans-serif;"> 
-            Denne siden er laget for å kunne gå i dybden på hvilke avgjørelser 
-            vi har tatt for å optimalisere vår nettside. Vi ønsker å begrunne valg av kode, struktur og 
-            design ved hjelp av HTML og CSS, og vise til testing gjennomført for kvalitetssikring av kodingen
+            <h2 class="page__aboutproject" style="text-align: center; font-family: Arial, Helvetica, sans-serif;">
+                Denne siden er laget for å kunne gå i dybden på hvilke avgjørelser
+                vi har tatt for å optimalisere vår nettside. Vi ønsker å begrunne valg av kode, struktur og
+                design ved hjelp av HTML og CSS, og vise til testing gjennomført for kvalitetssikring av kodingen
             </h2>
+
+            <section class="accesibility__section">
+
+
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    Våres gruppe har lagt stor vekt på tilgjengelighet i utformingen av nettsidene, slik at innholdet er
+                    brukervennlig for alle. For at nettsiden er sånn som den er nå, har vi skrevet inn media queries som
+                    tilpasser designet til ulike skjermstørrelser, slik at det fungerer både for små og store skjermer.
+                    For bildene har vi brukt <b>max-width: 100%</b> slik at bildene skalerer seg og aldri overskrider
+                    sin tilgjengelige "container". I tillegg har vi tatt med flere responsive grids og flexbox for
+                    layout, som gir en struktur der de justerer elementenes plassering og størrelse basert på skjermens
+                    bredde. Dette sikrer seg at nettsiden er oversiktlig, lett navigerbar og leselig, uansett hvilken
+                    enhet som brukes.
+                </p>
+
+                <div class="accesibility__image">
+                    <img src="image/images-Github-page/Test-performance-1.png" alt="Kodeendringer eksempel 1">
+                    <img src="image/images-Github-page/Test-Performance-2.png" alt="Kodeendringer eksempel 2">
+                </div>
+
+            </section>
+
+            <section class="accesibility__section">
+
+                <h1>Tilgjengelighet ved bruk av fargevalg og kontrast</h1>
+
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    Vi har brukt blå gradientbakgrunn med hvit tekst på. Ved bruk av dette skaper det en god kontrast
+                    mellom tekst og bakgrunn slik at det blir en god lesbarhet.
+                </p>
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    <b>Headingene</b> og <b>foterene</b> bruker høy kontrast med hvit tekst på blå gradientbakgrunn eks:
+                    (background-image: linear-gradient(to right, #4b9cd3, #0077cc) i .bar og .footer). I headeren har vi
+                    laget en "class" som heter .bar__link. Alle linkene i headeren har hvit bakgrunn. Ved bruk av disse
+                    fargene hjelper det brukere med redusert syn å forstå elementer som er interaktive.
+                </p>
+
+                <h1>Tilpasning av tekstlesbarhet</h1>
+
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    Vi har gjort noen endringer med tekststørrelsen og linjehøyder på enkelte seksjoner i nettsiden.
+                    Overskrifter som <b>.page__heading--style</b> har store skrifttyper (2rem for å fremheve viktige
+                    seksjoner). Vi har også brukt i tekster "paragraphs" i en lettlest størrelse i (1.2rem) og samtidig
+                    tatt linjehøyden på 1.5 i enkelte steder som eksempel: <b>.footer__tableMiddle--style</b>. Vi valgte
+                    disse kodene fordi det forbedrer lesbarheten når det er mange tekstblokker.
+                </p>
+
+                <h1>Navigasjonsvennlighet</h1>
+
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    Vi har gjort navigasjonen for brukere enkelt med både mus og tastatur. Dropdown-menyen i
+                    <b>.bar__dropdown</b> gjør bruk av <b>:focus:within</b> og <b>:hover</b> for å vise innhold. Dette
+                    sikrer at tastaturbrukere kan navigere effektivt uten mus. Vi har testet dette med tab-knappen.
+                    Hover-effekter, som eks: <b>.bar__link:hover</b>, gir visuelt forståelse som indikerer interaktive
+                    elementer
+                </p>
+                <h1>Tilrettelegging for tastaturbrukere</h1>
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    For brukere som navigerer med tastatur, er det lagt til fokus i <b>.bar__dropdown:focus-within</b>
+                    som viser skjulte menyer. Dette er spesielt nyttig i hovedmenyer slik at tastaturbrukere kan
+                    navigere lett.
+                </p>
+
+                <h1>Responsiv Design</h1>
+                <p class="accesibility__tekst accesibility__tekst--style">
+                    For å sikre tilgjengelighet på forskjellige skjermer, tilpasser designet seg gjennom media queries.
+                    Vi har brukt media queries for alle brukere av ulike skjerm.
+                </p>
+                <div class="accesibility__image">
+                    <img src="image/images-Accesibility-page/eksempelAvKode-1.png" alt="Eksempel av kode">
+                    <img src="image/images-Accesibility-page/eksempelAvKode-2.png" alt="Eksempel av kode">
+                    <img src="image/images-Accesibility-page/eksempelAvKode-3.png" alt="Eksempel av kode">
+                    <img src="image/images-Accesibility-page/eksempelAvKode-4.png" alt="Eksempel av kode">
+
+                </div>
+
+            </section>
         </div>
 
-        <p class="page__text" style="font-family: Arial, Helvetica, sans-serif;">
-            Vi hadde et ønske om å optimalisere hjemmesiden Oslomet bruker for informasjon om bachelorprogrammet Matematisk modellering og datavitenskap - ingeniør. 
-        </p>
-
     </main>
-    
+
 </body>
+
 </html>

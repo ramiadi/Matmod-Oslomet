@@ -6,30 +6,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="stylesheet/style.css" />
-  <!-- denne lenken er fra fontawesome (sosiale medier ikoner) -->
+  <!-- Denne lenken "link" er hentet fra nettsiden fontawesome som er sosiale medier ikoner (Font Awesome, 2024). Hentet fra https://fontawesome.com/v6/search?o=r&m=free -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <header class="bar">
-    <div class="bar__icon bar__icon--style">
+  <header class="bar bar--farge">
+    <div class="bar__icon">
       <!-- Logo -->
+      <!-- Bildet er fra Velferdsforskningsinstituttet NOVA ved OsloMet
+       – storbyuniversitetet (NOVA, 2024). Hentet fra https://x.com/NOVAnytt -->
       <a href="https://www.oslomet.no/"><img src="image/Oslomet-logo-fjernet-bakgrunn.png" alt="Oslomet-logo"
           class="bar__image">
       </a>
 
-      <!-- Navigasjonslenker som alltid er synlige -->
-      <div class="bar__meny">
-        <a href="index.html" class="bar__link bar__link--style">Hjemmeside</a>
-        <a href="HTMLAccesibility.HTML" class="bar__link bar__link--style">Accessibility</a>
-        <a href="Activity.html" class="bar__link bar__link--style">Activity</a>
-      </div>
+      <a href="index.html" class="bar__link bar__link--farge bar__link--style bar__link--size">Hjemmeside</a>
+      <a href="HTMLAccesibility.HTML"
+        class="bar__link bar__link--farge bar__link--style bar__link--size">Accessibility</a>
+      <a href="Activity.html" class="bar__link bar__link--farge bar__link--style bar__link--size">Activity</a>
     </div>
 
     <!-- Søk -->
-    <a href="#" style="text-decoration: none;" class="bar__search bar__search--style">Søk 🔍</a>
+    <a href="#" class="bar__search bar__search--farge bar__search--style bar__search--size">Søk 🔍</a>
 
   </header>
 
@@ -45,7 +45,8 @@
     <section class="github__section">
       <h2 class="github__underoverskrift">Endringer og forbedringer av koder</h2>
 
-      <p class="github__tekst">GitHub gjorde det enkelt med å endre linjer slik at alle teammedlemmer kan se på de
+      <p class="github__tekst github__tekst--style">GitHub gjorde det enkelt med å endre linjer slik at alle
+        teammedlemmer kan se på de
         nyeste
         kodene som har blitt
         lagt til. Vi valgte å bruke Github Desktop. Github Desktop gjorde det lett å opprette flere braches og gi de
@@ -54,16 +55,19 @@
         sammen i laget kommentere og godkjenne endringer før det blir lagt til i hovedkoden (main). Ved å bruke Github
         gjorde det at koden ble ryddig og oversiktlig. Github sitt verktøy gjorde det enkelt å opprette og ha oversikt
         av flere branches, slik at vi kunne jobbe effektivt uten å risikere konflikter i koden.</p>
+
       <div class="github__image">
-        <img src="image/images-Github-page/Skjermbilde 2024-11-07 151701.png" alt="Kodeendringer eksempel 1">
-        <img src="image/images-Github-page/Skjermbilde 2024-11-07 152015.png" alt="Kodeendringer eksempel 2">
+        <img src="image/images-Github-page/Skjermbilde 2024-11-20 162249.png" alt="Kodeendringer eksempel 1">
+        <img src="image/images-Github-page/Skjermbilde 2024-11-20 162401.png" alt="Kodeendringer eksempel 2">
       </div>
+
     </section>
 
 
     <section class="github__section">
       <h2 class="github__underoverskrift">Historikk over Commits</h2>
-      <p class="github__tekst">Ved å bruke Github gjorde det lettere å se på spesifikke endringer som en teammedlem har
+      <p class="github__tekst github__tekst--style">Ved å bruke Github gjorde det lettere å se på spesifikke endringer
+        som en teammedlem har
         gjort. Vi brukte Github desktop som gjør det enkelt for teammedlemmer for å spore etter endringer i våres
         prosjekt
         over tid. Commit-historikken i Github gir detaljer om hver endring , hvem som har gjort den, hva som er blir
@@ -81,7 +85,7 @@
     <section class="github__section">
       <h2 class="github__underoverskrift">Fordeler ved Bruk av Git</h2>
 
-      <ul class="github__liste">
+      <ul class="github__liste github__liste--style">
         <li>
           <strong>Sporbarhet:</strong> En av de største fordelene ved Git er evnen til å holde oversikt over alle
           endringer
@@ -113,8 +117,16 @@
 
   <footer class="footer">
 
+
+    <div class="footer__upper">
+      <h1>Kontakt oss!</h1>
+    </div>
+
     <div class="footer__page footer__page--style">
-      <table class="footer__tableRight footer__tableRight--style">
+
+      <table class="footer__tableRight footer__tableRight--style" ">
+        <!-- Alt linkene innenfor " tr" er sosiale medier ikoner (Font Awesome, 2024). Hentet fra
+        https://fontawesome.com/v6/search?o=r&m=free -->
         <tr>
           <th><a href="https://www.facebook.com/oslomet/"><i class="fa-brands fa-square-facebook"></i>Facebook</a>
           </th>
